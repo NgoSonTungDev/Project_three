@@ -21,8 +21,8 @@ const Login = () => {
   }, []);
 
   const handleMove = () => {
-    let url = window.location.origin;
-    window.location.href = `${url}/registerUser`;
+    // let url = window.location.origin;
+    // window.location.href = `${url}/registerUser`;
     history.push("/registerUser");
   };
   const handleClickMove = () => {};

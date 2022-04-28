@@ -1,4 +1,5 @@
 import { BrowserRouter ,Redirect,Route ,Switch} from "react-router-dom";
+import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
 import Register from "./pages/Register/Register";
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Login} />
+          <Route path="/home" exact component={Home} />
           <Route path="/registerUser" exact component={Register} />
           <Route path="/notfound" component={NotFound} />
           <Redirect to="/notfound" />

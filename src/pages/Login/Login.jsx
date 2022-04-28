@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Login.scss";
 import image from "./image.png";
 import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const Login = () => {
   const history = useHistory();
+  const location = useLocation()
 
   useEffect(() => {
     const labels = document.querySelectorAll(".form-control label");
@@ -25,7 +27,10 @@ const Login = () => {
     // window.location.href = `${url}/registerUser`;
     history.push("/registerUser");
   };
-  const handleClickMove = () => {};
+  const handleClickMove = () => {
+    history.push("/home");
+
+  };
   return (
     <div>
       <div className="container_login">

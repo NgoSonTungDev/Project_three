@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 const Navbar = () => {
     const [check , setCheck] = useState(true)
@@ -56,10 +57,13 @@ const Navbar = () => {
               <i class="fa-solid fa-gear"></i>
               <p> cài đặt</p>
               </div>
+              <Link to="/">
               <div className="container_narbar_content_2_1">
               <i class='bx bx-log-out'></i>
               <p> đăng xuất</p>
               </div>
+              </Link>
+              
             </div>
           </div>
         </div>

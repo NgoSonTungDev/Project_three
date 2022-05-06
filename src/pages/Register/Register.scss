@@ -10,6 +10,7 @@
   display: grid;
 
   .container_register_form {
+    transform: translateY(20px);
     border-radius: 8px;
 
     ::-webkit-input-placeholder {
@@ -30,18 +31,6 @@
     .highlight:hover {
       color: #fff;
       transition: color 0.2s ease;
-    }
-
-    .spacing {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      height: 120px;
-      font-weight: 300;
-      text-align: center;
-      margin-top: 10px;
-      color: rgba(255, 255, 255, 0.65);
     }
 
     .input-line:focus {
@@ -136,7 +125,7 @@
 
     .welcome {
       font-weight: 200;
-      margin-top: 75px;
+      margin-top: 25px;
       text-align: center;
       font-size: 40px;
       font-size: 2.5rem;
@@ -172,7 +161,7 @@
       flex-flow: column;
       box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
       box-sizing: border-box;
-      height: 650px;
+      height: 600px;
       border-radius: 8px;
       width: 360px;
       background: rgb(2, 0, 36);

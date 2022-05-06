@@ -17,9 +17,9 @@ const Home = () => {
     );
   };
 
-  const handelall = () =>{
-    setData(data)
-  }
+  const handelall = () => {
+    setData(data);
+  };
 
   const handlePs = () => {
     let s = "#2ecc71";
@@ -48,6 +48,48 @@ const Home = () => {
       )
     );
   };
+
+  const handeDango = () => {
+    let s = "Đang Ở";
+    setData(
+      data.filter((item) =>
+        item?.trangthai?.toLowerCase()?.includes(s.toLowerCase())
+      )
+    );
+  };
+
+  const handeDangden = () => {
+    let s = "Chuẩn bị đến";
+    setData(
+      data.filter((item) =>
+        item?.trangthai?.toLowerCase()?.includes(s.toLowerCase())
+      )
+    );
+  };
+
+  const handecbjdi = () => {
+    let s = "Chuẩn Bị rời đi";
+    setData(
+      data.filter((item) =>
+        item?.trangthai?.toLowerCase()?.includes(s.toLowerCase())
+      )
+    );
+  };
+
+  const handetrong = () => {
+    let s = "Phòng Trống";
+    setData(
+      data.filter((item) =>
+        item?.trangthai?.toLowerCase()?.includes(s.toLowerCase())
+      )
+    );
+  };
+
+  // const testFuncion = (traphong) =>{
+  //   if(data.find((e)=>e.songuoithue)>1){
+  //     traphong.style.display="none";
+  //   }
+  // }
 
   useEffect(() => {
     setData(data);
@@ -81,22 +123,22 @@ const Home = () => {
             <p>Trạng Thái Phòng :</p>
             <div className="contaier_home_control_3_1">
               <button onClick={handelall}>Tất Cả</button>
-              <button>
+              <button onClick={handeDangden}>
                 <i class="fa-solid fa-person-walking-luggage"></i> Chuẩn bị đến
                 (2)
               </button>
-              <button>
+              <button onClick={handeDango}>
                 <i class="fa-solid fa-person-walking-luggage"></i> đang ở (5)
               </button>
-              <button>
+              <button onClick={handecbjdi}>
                 <i class="fa-solid fa-person-walking-luggage"></i> chuẩn bị rời
                 đi (5)
               </button>
-              <button>
+              <button onClick={handetrong}>
                 <i class="fa-solid fa-warehouse-full"></i> Phòng trống (12)
               </button>
               <button onClick={handlePs}>
-                <i class="fa-solid fa-hand-sparkles"></i> Phòng sạch
+                <i class="fa-solid fa-hand-sparkles"></i> Phòng sạch (10)
               </button>
               <button onClick={handlePban}>
                 <i class="fa-solid fa-broom"></i> Phòng bẩn (2)

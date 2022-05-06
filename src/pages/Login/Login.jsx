@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Login.scss";
 import image from "./image.png";
-import { useHistory } from "react-router-dom";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const history = useHistory();
-  const location = useLocation()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const labels = document.querySelectorAll(".form-control label");
@@ -23,13 +21,13 @@ const Login = () => {
   }, []);
 
   const handleMove = () => {
-    let url = window.location.origin;
-    window.location.href = `${url}/registerUser`;
-    history.push("/registerUser");
+    // let url = window.location.origin;
+    // window.location.href = `${url}/registerUser`;
+    // history.push("/registerUser");
+    navigate("/registerUser")
   };
   const handleClickMove = () => {
-    history.push("/home");
-
+    navigate("/home")
   };
   return (
     <div>

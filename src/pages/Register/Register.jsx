@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Register.scss";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
@@ -11,13 +11,14 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 const Register = () => {
   const [open, setOpen] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setTimeout(() => {
-      let url = window.location.origin;
-      window.location.href = `${url}/`;
-      history.push("/");
+      // let url = window.location.origin;
+      // window.location.href = `${url}/`;
+      // history.push("/");
+      navigate("/")
     }, 2000);
     setOpen(true);
   };

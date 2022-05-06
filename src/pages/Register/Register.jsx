@@ -18,7 +18,7 @@ const Register = () => {
       // let url = window.location.origin;
       // window.location.href = `${url}/`;
       // history.push("/");
-      navigate("/")
+      navigate("/");
     }, 2000);
     setOpen(true);
   };

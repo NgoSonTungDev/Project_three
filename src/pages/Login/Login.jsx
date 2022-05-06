@@ -29,6 +29,7 @@ const Login = () => {
   const handleClickMove = () => {
     navigate("/home")
   };
+
   return (
     <div>
       <div className="container_login">
@@ -44,7 +45,9 @@ const Login = () => {
                 <input type="password" required />
                 <label>Mật&nbsp;Khẩu</label>
               </div>
-              <p className="forgot">Quên Mật Khẩu</p>
+              <p className="forgot" onClick={()=>{
+                navigate("/forgotPassword")
+              }}>Quên Mật Khẩu</p>
               <button class="btn_Login" onClick={handleClickMove}>
                 Login
               </button>

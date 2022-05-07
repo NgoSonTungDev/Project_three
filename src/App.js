@@ -6,8 +6,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import Register from "./pages/Register/Register";
 import Service from "./pages/Service/Service";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
-import BookRoom from "./pages/BookRoom/BookRoom";
 import ReturnRoom from "./pages/ReturnRoom/ReturnRoom";
+import BookRoom from "./pages/BookRoom/BookRoom";
 
 function App() {
   return (

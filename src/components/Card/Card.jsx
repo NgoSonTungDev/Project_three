@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Card.scss";
 
 const Card = (props) => {
+  const navigation = useNavigate()
   const item = props.datacart;
 
-  useEffect(() => {
-    var traphong = document.getElementById("traphong");
-    // props.testFuncion(traphong)
-  }, []);
+  const handlemovebookroom = () =>{
+    navigation(`/home/bookroom/${item.maphong}`)
+  }
+
+  const handlemovereturnroom = () =>{
+    navigation(`/home/returnroom/${item.maphong}`)
+  }
 
   return (
     <div>
@@ -29,7 +34,7 @@ const Card = (props) => {
             ></i>
           </p>
           <p>
-            giá : <span>{item.gia}</span> $
+            giá : <span>{item.gia}</span>$/Đêm
           </p>
           <div className="card_home_content_1">
             <p>Tình Trạng :</p>
@@ -39,8 +44,8 @@ const Card = (props) => {
             ></div>
           </div>
           <div className="card_home_content_buton">
-            <button>Đặt Phòng</button>
-            <button id="traphong">Trả Phòng</button>
+            {item.songuoithue === 0 && <button onClick={handlemovebookroom}>Đặt Phòng</button>}
+            {item.songuoithue >= 1 && <button onClick={handlemovereturnroom}>Trả Phòng</button>}
           </div>
         </div>
       </div>

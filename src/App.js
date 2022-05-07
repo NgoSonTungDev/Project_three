@@ -6,7 +6,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import Register from "./pages/Register/Register";
 import Service from "./pages/Service/Service";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
-
+import BookRoom from "./pages/BookRoom/BookRoom";
+import ReturnRoom from "./pages/ReturnRoom/ReturnRoom";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
     <Navbar />
     <Routes>
     <Route path="/" exact element={<Login />} /> 
-    <Route path="/home" exact element={<Home />} /> 
+    <Route path="/home" exact element={<Home />} />
+    <Route path="/home/bookroom/:name" exact element={<BookRoom />} /> 
+    <Route path="/home/returnroom/:name" exact element={<ReturnRoom />} /> 
     <Route path="/forgotPassword" exact element={<ForgotPassword />} /> 
     <Route path="/service" exact element={<Service />} /> 
     <Route path="/registerUser" exact element={<Register />} /> 

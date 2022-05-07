@@ -7,6 +7,8 @@ import Stack from "@mui/material/Stack";
 
 const Home = () => {
   const [data1, setData] = useState([]);
+  const [search, setsearch] = useState("");
+
   const [select, setSelect] = useState("");
 
   const setDataSelect = () => {
@@ -85,11 +87,14 @@ const Home = () => {
     );
   };
 
-  // const testFuncion = (traphong) =>{
-  //   if(data.find((e)=>e.songuoithue)>1){
-  //     traphong.style.display="none";
-  //   }
-  // }
+  const handleSetSearch = () =>{
+    setData(
+      data.filter((item) =>
+        item?.maphong?.toLowerCase()?.includes(search.toLowerCase())
+      )
+    );
+    setsearch("")
+  }
 
   useEffect(() => {
     setData(data);
@@ -118,6 +123,10 @@ const Home = () => {
               <option value="vip">Phòng VIP</option>
               <option value="thuong">Phòng Thường</option>
             </select>
+            <input type="text" placeholder="Mã phòng cần tìm" value={search} onChange={(e)=>{
+              setsearch(e.target.value)
+            }}/>
+            <div onClick={handleSetSearch} className="search"><i class="fa-solid fa-magnifying-glass"></i></div>
           </div>
           <div className="contaier_home_control_3">
             <p>Trạng Thái Phòng :</p>
@@ -135,7 +144,7 @@ const Home = () => {
                 đi (5)
               </button>
               <button onClick={handetrong}>
-                <i class="fa-solid fa-warehouse-full"></i> Phòng trống (12)
+              <i class="fa-solid fa-person-walking-luggage"></i>  Phòng trống (12)
               </button>
               <button onClick={handlePs}>
                 <i class="fa-solid fa-hand-sparkles"></i> Phòng sạch (10)

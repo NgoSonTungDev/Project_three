@@ -10,7 +10,7 @@ const data = [
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
     trangthai: "Chuẩn bị đến",
-    mautrangthai :"#2ecc71"
+    mautrangthai: "#2ecc71",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const data = [
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
     trangthai: "Phòng Trống",
-    mautrangthai :""
+    mautrangthai: "",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const data = [
     tinhtrang: 2,
     mautinhtrang: "#fbc531",
     trangthai: "Phòng Trống",
-    mautrangthai :""
+    mautrangthai: "",
   },
   {
     id: 4,
@@ -48,7 +48,8 @@ const data = [
     gia: 162,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Chuẩn bị đến",mautrangthai :"#2ecc71"
+    trangthai: "Chuẩn bị đến",
+    mautrangthai: "#2ecc71",
   },
   {
     id: 5,
@@ -56,11 +57,12 @@ const data = [
     maphong: "V-A0435",
     songuoio: 2,
     loaiphong: "vip",
-    songuoithue: 0,
+    songuoithue: 2,
     gia: 140,
     tinhtrang: 3,
     mautinhtrang: "#e84118",
-    trangthai: "Đang Ở",mautrangthai :"#3498db"
+    trangthai: "Đang Ở",
+    mautrangthai: "#3498db",
   },
   {
     id: 6,
@@ -72,7 +74,8 @@ const data = [
     gia: 130,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Phòng Trống",mautrangthai :""
+    trangthai: "Phòng Trống",
+    mautrangthai: "",
   },
   {
     id: 7,
@@ -84,7 +87,8 @@ const data = [
     gia: 72,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Chuẩn Bị rời đi",mautrangthai :"#e84118"
+    trangthai: "Chuẩn Bị rời đi",
+    mautrangthai: "#e84118",
   },
   {
     id: 8,
@@ -96,7 +100,8 @@ const data = [
     gia: 71,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Phòng Trống",mautrangthai :""
+    trangthai: "Phòng Trống",
+    mautrangthai: "",
   },
   {
     id: 9,
@@ -108,7 +113,8 @@ const data = [
     gia: 65,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Chuẩn bị đến",mautrangthai :"#2ecc71"
+    trangthai: "Chuẩn bị đến",
+    mautrangthai: "#2ecc71",
   },
   {
     id: 10,
@@ -116,11 +122,12 @@ const data = [
     maphong: "T-A0132",
     songuoio: 2,
     loaiphong: "thuong",
-    songuoithue: 0,
+    songuoithue: 2,
     gia: 75,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Đang Ở",mautrangthai :"#3498db"
+    trangthai: "Đang Ở",
+    mautrangthai: "#3498db",
   },
   {
     id: 11,
@@ -128,11 +135,12 @@ const data = [
     maphong: "T-B0123",
     songuoio: 2,
     loaiphong: "thuong",
-    songuoithue: 0,
+    songuoithue: 2,
     gia: 170,
     tinhtrang: 3,
     mautinhtrang: "#e84118",
-    trangthai: "Đang Ở",mautrangthai :"#3498db"
+    trangthai: "Đang Ở",
+    mautrangthai: "#3498db",
   },
   {
     id: 12,
@@ -144,7 +152,8 @@ const data = [
     gia: 90,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Chuẩn Bị rời đi",mautrangthai :"#e84118"
+    trangthai: "Chuẩn Bị rời đi",
+    mautrangthai: "#e84118",
   },
   {
     id: 13,
@@ -156,7 +165,8 @@ const data = [
     gia: 70,
     tinhtrang: 3,
     mautinhtrang: "#e84118",
-    trangthai: "Đang Ở",mautrangthai :"#3498db"
+    trangthai: "Đang Ở",
+    mautrangthai: "#3498db",
   },
   {
     id: 14,
@@ -168,7 +178,8 @@ const data = [
     gia: 80,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Chuẩn bị đến",mautrangthai :"#2ecc71"
+    trangthai: "Chuẩn bị đến",
+    mautrangthai: "#2ecc71",
   },
   {
     id: 15,
@@ -180,7 +191,8 @@ const data = [
     gia: 170,
     tinhtrang: 2,
     mautinhtrang: "#fbc531",
-    trangthai: "Phòng Trống",mautrangthai :""
+    trangthai: "Phòng Trống",
+    mautrangthai: "",
   },
   {
     id: 16,
@@ -192,7 +204,8 @@ const data = [
     gia: 144,
     tinhtrang: 1,
     mautinhtrang: "#2ecc71",
-    trangthai: "Phòng Trống",mautrangthai :""
+    trangthai: "Phòng Trống",
+    mautrangthai: "",
   },
 ];
 

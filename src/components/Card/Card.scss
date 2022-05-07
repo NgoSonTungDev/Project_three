@@ -51,6 +51,9 @@
       margin-top: 15px;
       display: flex;
       button {
+        margin-top: 6px;
+        margin-left: 50%;
+        transform: translateX(-71%);
         cursor: pointer;
         border: none;
         outline: none;

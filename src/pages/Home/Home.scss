@@ -25,6 +25,22 @@
                 outline: none;
                 border: 2px solid #000;
             }
+            input{
+                border: none;
+                outline: none;
+                margin-left: 80px;
+                border-bottom: 1px solid #222;
+            }
+            .search{
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                margin-left: 8px;
+
+                &:hover{
+                    color: #0984e3;
+                }
+            }
         }
        
         .contaier_home_control_3{

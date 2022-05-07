@@ -21,7 +21,7 @@ const Navbar = () => {
   const handlequanly = () =>{
     var quanly = document.querySelector(".quanly")
     if (check2 === true) {
-      quanly.style.height = "317px";
+      quanly.style.height = "360px";
       quanly.style.transition = "0.2s linear"
       setCheck2(false);
     } else {
@@ -59,8 +59,9 @@ const Navbar = () => {
                     <li>Quản lý phòng</li>
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>
-                    <li>Quản lý tài khoản</li>
+                    <li>Quản lý hệ thống</li>
                     <li>Quản lý lương</li>
+                    <li>Quản lý tài khoản</li>
                   </ul>
                 </div>
               </li>

@@ -12,19 +12,19 @@ import ReturnRoom from "./pages/ReturnRoom/ReturnRoom";
 function App() {
   return (
     <BrowserRouter>
-    <Navbar />
-    <Routes>
-    <Route path="/" exact element={<Login />} /> 
-    <Route path="/home" exact element={<Home />} />
-    <Route path="/home/bookroom/:name" exact element={<BookRoom />} /> 
-    <Route path="/home/returnroom/:name" exact element={<ReturnRoom />} /> 
-    <Route path="/forgotPassword" exact element={<ForgotPassword />} /> 
-    <Route path="/service" exact element={<Service />} /> 
-    <Route path="/registerUser" exact element={<Register />} /> 
-    <Route path="/notfound" exact element={<NotFound />} /> 
-    {/* <Redirect to="/notfound" /> */}
-    </Routes>
-  </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Login />} />
+        <Route path="/home" exact element={<Home />} />
+        <Route path="/home/bookroom/:name" exact element={<BookRoom />} />
+        <Route path="/home/returnroom/:name" exact element={<ReturnRoom />} />
+        <Route path="/forgotPassword" exact element={<ForgotPassword />} />
+        <Route path="/service" exact element={<Service />} />
+        <Route path="/registerUser" exact element={<Register />} />
+        <Route path="/notfound" exact element={<NotFound />} />
+        {/* <Redirect to="/notfound" /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

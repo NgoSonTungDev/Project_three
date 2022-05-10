@@ -31,11 +31,11 @@ const data = [
     maphong: "V-A0345",
     songuoio: 3,
     loaiphong: "vip",
-    songuoithue: 0,
+    songuoithue: 2,
     gia: 150,
     tinhtrang: 2,
     mautinhtrang: "#fbc531",
-    trangthai: "Phòng Trống",
+    trangthai: "Đang Ở",
     mautrangthai: "",
   },
   {

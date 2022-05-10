@@ -2,9 +2,33 @@ import React, { useEffect, useState } from "react";
 import "./Login.scss";
 import image from "./image.png";
 import { useNavigate } from "react-router-dom";
+import Stack from "@mui/material/Stack";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const Login = () => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const [mesege, setMesege] = useState("");
+  const [story, setStory] = useState("");
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   useEffect(() => {
     const labels = document.querySelectorAll(".form-control label");
@@ -21,13 +45,21 @@ const Login = () => {
   }, []);
 
   const handleMove = () => {
-    // let url = window.location.origin;
-    // window.location.href = `${url}/registerUser`;
-    // history.push("/registerUser");
-    navigate("/registerUser")
+    navigate("/registerUser");
   };
   const handleClickMove = () => {
-    navigate("/home")
+    handleClick();
+    if (user === "" || pass === "") {
+      setMesege("Không được bỏ trống user or password");
+      setStory("info");
+    } else {
+      if (user === "admin" && pass === "admin") {
+        navigate("/home");
+      } else {
+        setMesege("Sai user or password");
+        setStory("error");
+      }
+    }
   };
 
   return (
@@ -38,16 +70,35 @@ const Login = () => {
             <h3>ĐĂNG NHẬP</h3>
             <form>
               <div class="form-control">
-                <input type="text" required />
+                <input
+                  type="text"
+                  required
+                  value={user}
+                  onChange={(e) => {
+                    setUser(e.target.value);
+                  }}
+                />
                 <label>Mã&nbsp;Nhân&nbsp;Viên</label>
               </div>
               <div class="form-control">
-                <input type="password" required />
+                <input
+                  type="password"
+                  required
+                  value={pass}
+                  onChange={(e) => {
+                    setPass(e.target.value);
+                  }}
+                />
                 <label>Mật&nbsp;Khẩu</label>
               </div>
-              <p className="forgot" onClick={()=>{
-                navigate("/forgotPassword")
-              }}>Quên Mật Khẩu</p>
+              <p
+                className="forgot"
+                onClick={() => {
+                  navigate("/forgotPassword");
+                }}
+              >
+                Quên Mật Khẩu
+              </p>
               <button class="btn_Login" onClick={handleClickMove}>
                 Login
               </button>
@@ -62,6 +113,13 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Stack spacing={10} sx={{ width: "100%" }}>
+        <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+          <Alert onClose={handleClose} severity={story} sx={{ width: "100%" }}>
+            {mesege}
+          </Alert>
+        </Snackbar>
+      </Stack>
     </div>
   );
 };

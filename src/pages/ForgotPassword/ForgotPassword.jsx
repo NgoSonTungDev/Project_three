@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {useNavigate} from 'react-router-dom'
 import "./ForgotPassword.scss";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -18,7 +19,13 @@ const style = {
 const ForgotPassword = () => {
   const [check, setCheck] = useState(true);
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
+  const navigate = useNavigate()
+  const handleOpen = () => {
+    setOpen(true);
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
+  };
   const handleClose = () => setOpen(false);
 
   const handlepass = () => {
@@ -41,16 +48,16 @@ const ForgotPassword = () => {
     <div>
       <div className="container_ForgotPassword">
         <div className="form_ForgotPassword">
-          <h2>Quên mật khẩu</h2>
+          <h2>Forgot password</h2>
           <div className="form_ForgotPassword_1">
-            <p>Mã số Nhân viên :</p>
+            <p>Employee Number :</p>
             <div className="form_ForgotPassword_1_1">
               <i class="fa-solid fa-user-lock"></i>{" "}
               <input type="text" placeholder="Nhập mã nhân viên " />
             </div>
           </div>
           <div className="form_ForgotPassword_1">
-            <p>Mật khẩu cũ :</p>
+            <p>Previous Password :</p>
             <div className="form_ForgotPassword_1_1">
               <i
                 id="pass"
@@ -60,7 +67,7 @@ const ForgotPassword = () => {
               <input id="inputpass" type="password" placeholder="Mật khẩu cũ" />
             </div>
           </div>
-          <button onClick={handleOpen}>Gửi yêu cầu</button>
+          <button onClick={handleOpen}>Send Require</button>
         </div>
       </div>
       <Modal
@@ -74,7 +81,9 @@ const ForgotPassword = () => {
             <p className="anoumane">Thông báo từ bộ phận phát triển</p>
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Chào bạn, chúng tôi đã nhận được yêu cầu của bạn. Chúng tôi sẻ sử lý yêu cầu này trong 24H. Bạn vui lòng kiểm tra email của bạn thường xuyên. Cảm ơn 😉 !
+            Chào bạn, chúng tôi đã nhận được yêu cầu của bạn. Chúng tôi sẻ sử lý
+            yêu cầu này trong 24H. Bạn vui lòng kiểm tra email của bạn thường
+            xuyên. Cảm ơn 😉 !
           </Typography>
         </Box>
       </Modal>

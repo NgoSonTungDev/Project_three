@@ -15,9 +15,6 @@ const Register = () => {
 
   const handleClick = () => {
     setTimeout(() => {
-      // let url = window.location.origin;
-      // window.location.href = `${url}/`;
-      // history.push("/");
       navigate("/");
     }, 2000);
     setOpen(true);
@@ -74,7 +71,7 @@ const Register = () => {
                 ></input>
                 <input
                   type="number"
-                  placeholder="Citizen identification"
+                  placeholder="Citizen ID or identity card"
                   class="input-line full-width"
                   required
                 ></input>

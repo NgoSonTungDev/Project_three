@@ -5,6 +5,7 @@ import data from "../../asset/data";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -33,6 +34,7 @@ const BookRoom = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="container_bookroom">
         <div className="form_book_room">
           <div className="tieude">
@@ -57,7 +59,7 @@ const BookRoom = () => {
             </div>
             <div className="form_book_room_2_1">
               <div className="form_book_room_2_1_1">
-                <p>Identity card :</p>
+                <p>Citizen ID or identity card :</p>
               </div>
               <div className="form_book_room_2_1_2">
                 <input type="number" required placeholder="ex: 2093789874" />

@@ -26,11 +26,17 @@
                 border: 2px solid #000;
             }
             input{
+                padding: 3px 10px;
+                font-size: 13px;
                 border: none;
                 outline: none;
-                margin-left: 80px;
+                margin-left: 30px;
                 border-bottom: 1px solid #222;
             }
+            .findroom{
+                margin-left: 30px;
+            }
+            
             .search{
                 cursor: pointer;
                 width: 20px;

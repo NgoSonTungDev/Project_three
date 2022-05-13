@@ -12,9 +12,10 @@ import BookRoom from "./pages/BookRoom/BookRoom";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" exact element={<Login />} />
+        <Route path="/login-hotel" exact element={<Login />} />
         <Route path="/home" exact element={<Home />} />
         <Route path="/home/bookroom/:name" exact element={<BookRoom />} />
         <Route path="/home/returnroom/:name" exact element={<ReturnRoom />} />

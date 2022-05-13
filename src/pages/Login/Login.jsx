@@ -78,7 +78,7 @@ const Login = () => {
                     setUser(e.target.value);
                   }}
                 />
-                <label>Mã&nbsp;Nhân&nbsp;Viên</label>
+                <label>Employee&nbsp;Code</label>
               </div>
               <div class="form-control">
                 <input
@@ -89,7 +89,7 @@ const Login = () => {
                     setPass(e.target.value);
                   }}
                 />
-                <label>Mật&nbsp;Khẩu</label>
+                <label>Passwork</label>
               </div>
               <p
                 className="forgot"
@@ -97,7 +97,7 @@ const Login = () => {
                   navigate("/forgotPassword");
                 }}
               >
-                Quên Mật Khẩu
+                Forgot password
               </p>
               <button class="btn_Login" onClick={handleClickMove}>
                 Login

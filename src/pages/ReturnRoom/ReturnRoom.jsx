@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import data from "../../asset/data";
+import Navbar from "../../components/Navbar/Navbar";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
@@ -44,6 +45,7 @@ const ReturnRoom = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="container_returnroom">
         <div className="form_return_room">
           <div className="tieude">
@@ -124,7 +126,7 @@ const ReturnRoom = () => {
             </div>
             <div className="form_return_room_content_main">
               <div className="form_return_room_content_1">
-                <p>Service :</p>
+                <p>Service used :</p>
               </div>
               <div className="form_return_room_content_1_1">
                 <p>Dịch vụ giặt ủi quần áo</p>

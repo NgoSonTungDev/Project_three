@@ -4,6 +4,7 @@ import "./Home.scss";
 import data from "../../asset/data";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   const [data1, setData] = useState([]);
@@ -102,6 +103,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="contaier_home">
         <div className="contaier_home_control">
           <div className="contaier_home_control_1">
@@ -123,6 +125,7 @@ const Home = () => {
               <option value="vip">Phòng VIP</option>
               <option value="thuong">Phòng Thường</option>
             </select>
+            <p className="findroom">Tìm Phòng :</p>
             <input type="text" placeholder="Mã phòng cần tìm" value={search} onChange={(e)=>{
               setsearch(e.target.value)
             }}/>

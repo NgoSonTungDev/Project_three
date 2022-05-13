@@ -81,10 +81,14 @@ const BookRoom = () => {
             </div>
             <div className="form_book_room_2_1">
               <div className="form_book_room_2_1_1">
-                <p>Room Code :</p>
+                <p>Room Code & Customer Type :</p>
               </div>
               <div className="form_book_room_2_1_2">
                 <h3>{dataRoom.maphong}</h3>
+                <select name="" id="">
+                  <option value="" >Regular customers</option>
+                  <option value="" >VIP customers</option>
+                </select>
               </div>
             </div>
             <div className="form_book_room_2_1">

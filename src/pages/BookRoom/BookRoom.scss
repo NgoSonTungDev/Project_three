@@ -83,6 +83,7 @@
           width: 60%;
           height: 50px;
           display: flex;
+          align-items: center;
           input {
             outline: none;
             padding: 3px 15px;
@@ -95,6 +96,15 @@
             &:nth-child(2) {
               margin-left: 20px;
             }
+          }
+          select{
+            margin-left: 25px;
+            width: 200px;
+            height: 30px;
+            outline: none;
+            border: none;
+            border: 1px solid #0a224c;
+            cursor: pointer;
           }
           .emailinput {
             width: 550px;

@@ -88,14 +88,14 @@ const Home = () => {
     );
   };
 
-  const handleSetSearch = () =>{
+  const handleSetSearch = () => {
     setData(
       data.filter((item) =>
         item?.maphong?.toLowerCase()?.includes(search.toLowerCase())
       )
     );
-    setsearch("")
-  }
+    setsearch("");
+  };
 
   useEffect(() => {
     setData(data);
@@ -103,7 +103,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="contaier_home">
         <div className="contaier_home_control">
           <div className="contaier_home_control_1">
@@ -126,10 +126,17 @@ const Home = () => {
               <option value="thuong">Phòng Thường</option>
             </select>
             <p className="findroom">Tìm Phòng :</p>
-            <input type="text" placeholder="Mã phòng cần tìm" value={search} onChange={(e)=>{
-              setsearch(e.target.value)
-            }}/>
-            <div onClick={handleSetSearch} className="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input
+              type="text"
+              placeholder="Mã phòng cần tìm"
+              value={search}
+              onChange={(e) => {
+                setsearch(e.target.value);
+              }}
+            />
+            <div onClick={handleSetSearch} className="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
           </div>
           <div className="contaier_home_control_3">
             <p>Trạng Thái Phòng :</p>
@@ -147,7 +154,8 @@ const Home = () => {
                 đi (5)
               </button>
               <button onClick={handetrong}>
-              <i class="fa-solid fa-person-walking-luggage"></i>  Phòng trống (12)
+                <i class="fa-solid fa-person-walking-luggage"></i> Phòng trống
+                (12)
               </button>
               <button onClick={handlePs}>
                 <i class="fa-solid fa-hand-sparkles"></i> Phòng sạch (10)

@@ -6,7 +6,6 @@ const Navbar = () => {
   const [check2, setCheck2] = useState(true);
   const navigation = useNavigate();
 
-
   const handleuser = () => {
     var box = document.querySelector(".container_narbar_content_2");
     if (check === true) {
@@ -18,23 +17,22 @@ const Navbar = () => {
     }
   };
 
-  const handlequanly = () =>{
-    var quanly = document.querySelector(".quanly")
+  const handlequanly = () => {
+    var quanly = document.querySelector(".quanly");
     if (check2 === true) {
       quanly.style.height = "360px";
-      quanly.style.transition = "0.2s linear"
+      quanly.style.transition = "0.2s linear";
       setCheck2(false);
     } else {
       quanly.style.height = "0";
-      quanly.style.transition = "0.2s linear"
+      quanly.style.transition = "0.2s linear";
       setCheck2(true);
     }
+  };
 
-  }
-
-  const moveHome = () =>{
-    navigation("/home")
-  }
+  const moveHome = () => {
+    navigation("/home");
+  };
 
   return (
     <div>
@@ -60,15 +58,24 @@ const Navbar = () => {
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>
                     <li>Quản lý hệ thống</li>
-                    <li>Quản lý lương</li>
                     <li>Quản lý tài khoản</li>
                   </ul>
                 </div>
               </li>
-              <li onClick={()=>{
-                navigation("/service")
-              }}>Dịch Vụ</li>
-              <li>Báo cáo/thống kê</li>
+              <li
+                onClick={() => {
+                  navigation("/salary");
+                }}
+              >
+                 Quản lý lương
+              </li>
+              <li
+                onClick={() => {
+                  navigation("/statistical");
+                }}
+              >
+                Báo cáo/thống kê
+              </li>
             </ul>
           </div>
           <div className="container_narbar_content_name">

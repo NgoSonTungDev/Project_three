@@ -30,9 +30,28 @@ const Login = () => {
     setOpen(false);
   };
 
+  const handleMove = () => {
+    navigate("/registerUser");
+  };
+
+  const handleClickMove = () => {
+    if (user === "" || pass === "") {
+      handleClick();
+      setMesege("Không được bỏ trống user or password");
+      setStory("info");
+    } else {
+      if (user != "admin" && pass != "admin") {
+        handleClick();
+        setMesege("Sai user or password");
+        setStory("error");
+      } else {
+        navigate("/home");
+      }
+    }
+  };
+
   useEffect(() => {
     const labels = document.querySelectorAll(".form-control label");
-
     labels.forEach((label) => {
       label.innerHTML = label.innerText
         .split("")
@@ -43,24 +62,6 @@ const Login = () => {
         .join("");
     });
   }, []);
-
-  const handleMove = () => {
-    navigate("/registerUser");
-  };
-  const handleClickMove = () => {
-    handleClick();
-    if (user === "" || pass === "") {
-      setMesege("Không được bỏ trống user or password");
-      setStory("info");
-    } else {
-      if (user === "admin" && pass === "admin") {
-        navigate("/home");
-      } else {
-        setMesege("Sai user or password");
-        setStory("error");
-      }
-    }
-  };
 
   return (
     <div>
@@ -114,7 +115,7 @@ const Login = () => {
         </div>
       </div>
       <Stack spacing={10} sx={{ width: "100%" }}>
-        <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+        <Snackbar open={open} autoHideDuration={1000} onClose={handleClose}>
           <Alert onClose={handleClose} severity={story} sx={{ width: "100%" }}>
             {mesege}
           </Alert>

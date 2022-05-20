@@ -24,7 +24,7 @@ const ForgotPassword = () => {
     setOpen(true);
     setTimeout(() => {
       navigate("/");
-    }, 3000);
+    }, 4500);
   };
   const handleClose = () => setOpen(false);
 

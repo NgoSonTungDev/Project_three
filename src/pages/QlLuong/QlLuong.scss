@@ -1,22 +1,105 @@
 .qlluong-container {
-    width: 100%;
-    height: 80vh;
+  width: 100%;
+  height: 80vh;
 
-    .qlluong-header {
-        transform: translateY(80px);
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 20%;
-        border: 1px solid;
+  .qlluong-header {
+    transform: translateY(65px);
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    border: 1px solid;
+    padding: 10px;
+
+    .qlluong-search {
+      align-items: center;
+
+      .qlluong-input {
         padding: 10px;
+        // border-radius: 4px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+      }
 
-        .qlluong-input {
-            padding: 10px;
-            border-radius: 4px;
+      .qlluong-icon {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+
+        &:hover {
+          color: aqua;
         }
-        
-
+      }
     }
+  }
 
+  .qlluong-table {
+    width: 80%;
+    height: 550px;
+    transform: translateY(85px);
+    margin-left: 10%;
+  }
+
+  .qlluong-modal {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.3);
+    margin-top: -85vh;
+    z-index: 100;
+    position: relative;
+
+    .qlluong-modal-child {
+      width: 700px;
+      height: 500px;
+      background-color: #fff;
+      position: absolute;
+      top: 100px;
+      left: 400px;
+
+      .qlluong-child-close {
+        text-align: right;
+        padding: 5px 10px;
+        opacity: 1;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .qlluong-content-title {
+        text-align: center;
+        height: 40px;
+        width: 100%;
+      }
+
+      .qlluong-content {
+        width: 100%;
+        display: flex;
+
+        .qlluong-content-img {
+          width: 250px;
+          height: 300px;
+          margin: 40px 60px;
+
+          img {
+            width: 250px;
+            height: 300px;
+          }
+        }
+      }
+
+      .qlluong-content-information {
+        width: 100%;
+        margin: 50px 20px 0 0;
+
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
 }

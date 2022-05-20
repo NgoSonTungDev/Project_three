@@ -64,7 +64,7 @@ const Navbar = () => {
               </li>
               <li
                 onClick={() => {
-                  navigation("/salary");
+                  navigation("/salary-management");
                 }}
               >
                  Quản lý lương

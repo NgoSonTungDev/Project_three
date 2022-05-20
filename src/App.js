@@ -26,7 +26,6 @@ function App() {
         <Route path="/notfound" exact element={<NotFound />} />
         {/* <Redirect to="/notfound" /> */}
         <Route path="/salary-management" exact element={<Qlluong />} />
-
       </Routes>
     </BrowserRouter>
   );

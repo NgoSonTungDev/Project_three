@@ -1,0 +1,24 @@
+.formQLNV {
+    width: 100%;
+    height: 100vh;
+    .formQLNV_Text{
+        margin-left: 1%;
+        width: 98%;
+        height: 12%;
+        transform: translateY(60px);
+        background-color: red;
+
+        h1{
+        transform: translateY(20px);
+
+            font-size: 20px;
+        }
+    }
+    .formQLNV_Table{
+        margin-left: 1%;
+        width: 98%;
+        margin-top: 5%;
+        height: 76%;
+    }
+    
+}

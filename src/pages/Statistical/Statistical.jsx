@@ -5,19 +5,40 @@ import { useLocation } from "react-router-dom";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  CartesianGrid,
+  LineChart,
+  AreaChart,
+  Area,
+  Line,
+} from "recharts";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
 const data = [
-  { name: "Page A", uv: 400, pv: 2400, amt: 2400 },
-  { name: "Page b", uv: 230, pv: 2400, amt: 2400 },
-  { name: "Page c", uv: 189, pv: 2400, amt: 2400 },
-  { name: "Page d", uv: 290, pv: 2400, amt: 2400 },
-  { name: "Page e", uv: 156, pv: 2400, amt: 2400 },
-  { name: "Page f", uv: 178, pv: 2400, amt: 2400 },
+  { name: "Page A", uv: 389, pv: 128, amt: 2400 },
+  { name: "Page B", uv: 230, pv: 344, amt: 2400 },
+  { name: "Page C", uv: 189, pv: 234, amt: 2400 },
+  { name: "Page D", uv: 290, pv: 556, amt: 2400 },
+  { name: "Page E", uv: 156, pv: 897, amt: 2400 },
+  { name: "Page F", uv: 178, pv: 684, amt: 2400 },
+];
+
+const data2 = [
+  { name: "Page A", uv: 110.2, pv: 123.32, amt: 690 },
+  { name: "Page B", uv: 153.5, pv: 425.0, amt: 387 },
+  { name: "Page C", uv: 204.3, pv: 235.3, amt: 908 },
+  { name: "Page D", uv: 121.3, pv: 345.6, amt: 532 },
+  { name: "Page E", uv: 123.3, pv: 378.9, amt: 478 },
+  { name: "Page F", uv: 302.9, pv: 590.8, amt: 932 },
 ];
 
 const Statistical = () => {
@@ -42,6 +63,9 @@ const Statistical = () => {
     var container_Statistical_input = document.querySelector(
       ".container_Statistical_input"
     );
+    var container_Statistican_content = document.querySelector(
+      "container_Statistican_content"
+    );
     if (date1 === "" || date2 === "") {
       handleClick();
     } else {
@@ -59,8 +83,8 @@ const Statistical = () => {
     <div>
       <Navbar />
       <div className="container_Statistical">
-        {/* <div className="container_Statistical_input">
-          <div className="container_Statistical_input_content">
+        <div className="container_Statistical_input">
+          {/* <div className="container_Statistical_input_content">
             <p>Bạn muốn xem báo cáo từ khoản thời gian nào</p>
             <div className="container_Statistical_input_content_1">
               <div className="container_Statistical_input_content_1_1">
@@ -87,8 +111,14 @@ const Statistical = () => {
               </div>
             </div>
             <button onClick={handleOnClickSubMit}>Submit</button>
+          </div> */}
+          <div className="container_Statistical_loader">
+          <span class="loader"></span>
+          <p>Loading....</p>
+
           </div>
-        </div> */}
+
+        </div>
 
         <div className="container_Statistican_content">
           <div className="container_Statistican_content_text">
@@ -103,7 +133,12 @@ const Statistical = () => {
                   {" "}
                   <i class="bx bxl-audible"></i> Tỉ lệ truy cập trang web
                 </p>
-                <BarChart className="BarChart_cont" width={600} height={300} data={data}>
+                <BarChart
+                  className="BarChart_cont"
+                  width={600}
+                  height={290}
+                  data={data}
+                >
                   <XAxis dataKey="name" stroke="#8884d8" />
                   <YAxis />
                   <Tooltip
@@ -122,6 +157,7 @@ const Statistical = () => {
                   />
                   <CartesianGrid stroke="#ccc" strokeDasharray="2 2" />
                   <Bar dataKey="uv" fill="#8884d8" barSize={25} />
+                  <Bar dataKey="pv" fill="#0984e3" barSize={25} />
                 </BarChart>
               </div>
               <div className="container_Statistican_content_recharts_1_1">
@@ -129,7 +165,75 @@ const Statistical = () => {
                   {" "}
                   <i class="bx bxl-audible"></i> Tỉ lệ đặt phong
                 </p>
+                <LineChart
+                  className="LineChart_box"
+                  width={600}
+                  height={290}
+                  data={data2}
+                >
+                  <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                  <Line type="monotone" dataKey="pv" stroke="#0984e3" />
+                  <Line type="monotone" dataKey="amt" stroke="#d63031" />
+
+                  <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                </LineChart>
               </div>
+            </div>
+            <div className="container_Statistican_content_recharts_2">
+              <p>
+                {" "}
+                <i class="bx bx-money-withdraw"></i> Doanh thu
+                <AreaChart
+                  className="AreaChart"
+                  width={1320}
+                  height={280}
+                  data={data2}
+                  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                >
+                  <defs>
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+                    </linearGradient>
+                    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+                    </linearGradient>
+                    <linearGradient id="colorAmt" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#d63031" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#d63031" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <Tooltip />
+                  <Area
+                    type="monotone"
+                    dataKey="uv"
+                    stroke="#8884d8"
+                    fillOpacity={1}
+                    fill="url(#colorUv)"
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="pv"
+                    stroke="#82ca9d"
+                    fillOpacity={1}
+                    fill="url(#colorPv)"
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="amt"
+                    stroke="#82ca9d"
+                    fillOpacity={1}
+                    fill="url(#colorAmt)"
+                  />
+                </AreaChart>
+              </p>
             </div>
           </div>
         </div>

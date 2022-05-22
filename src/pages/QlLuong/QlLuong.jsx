@@ -151,7 +151,6 @@ const Qlluong = () => {
     if (reason === "clickaway") {
       return;
     }
-
     setOpen(false);
   };
 
@@ -279,7 +278,7 @@ const Qlluong = () => {
         </div>
 
         <Stack spacing={10} sx={{ width: "100%" }}>
-          <Snackbar open={open} autoHideDuration={1000} onClose={handleClose}>
+          <Snackbar open={open} autoHideDuration={1000} onClose={handleCloseDelete}>
             <Alert
               onClose={handleCloseDelete}
               severity={story}

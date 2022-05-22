@@ -86,6 +86,27 @@ const dataQLluong = [
     day: 28,
     price: 13000000,
   },
+  {
+    mnv: 109,
+    name: "Nguyễn Đức Hiếu",
+    image:
+      "https://ttk16.com/wp-content/uploads/2021/11/tran-huyen-chau-bikini-600x800.jpg",
+    daywork: 30,
+    dayoff: 2,
+    day: 28,
+    price: 13000000,
+  },
+  {
+    mnv: 110,
+    name: "Trần Quang Thắng",
+    image:
+      "https://ttk16.com/wp-content/uploads/2021/11/tran-huyen-chau-bikini-600x800.jpg",
+    daywork: 30,
+    dayoff: 2,
+    day: 28,
+    price: 13000000,
+  },
+  
 ];
 
 const Alert = React.forwardRef(function Alert(props, ref) {

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import Stack from "@mui/material/Stack";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 import "./QlLuong.scss";
 
 const dataQLluong = [
@@ -46,7 +49,8 @@ const dataQLluong = [
   {
     mnv: 105,
     name: "Nguyễn Lương Bảo",
-    image: "https://icdn.dantri.com.vn/thumb_w/640/2019/03/04/hot-girl-viet-ru-nhau-tung-loat-anh-bikini-nong-bong-19-1551714677239.jpg",
+    image:
+      "https://icdn.dantri.com.vn/thumb_w/640/2019/03/04/hot-girl-viet-ru-nhau-tung-loat-anh-bikini-nong-bong-19-1551714677239.jpg",
     daywork: 30,
     dayoff: 4,
     day: 26,
@@ -84,9 +88,19 @@ const dataQLluong = [
   },
 ];
 
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
 const Qlluong = () => {
+  const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
+  const [open, setOpen] = useState(false);
+  const [story, setStory] = useState("");
+  const [mesege, setMesege] = useState("");
+
   var box = document.querySelector(".qlluong-modal");
+  var update = document.querySelector(".btn-update");
 
   const clickbox = () => {
     box.style.display = "block";
@@ -94,6 +108,51 @@ const Qlluong = () => {
 
   const handleClose = () => {
     box.style.display = "none";
+  };
+
+  const handleSearch = () => {
+    setSearch("");
+    if (dataQLluong.find((item) => item.mnv == search)) {
+      box.style.display = "block";
+      setData(dataQLluong.find((item) => item.mnv == search));
+    } else {
+      setMesege("Không tìm thấy nhân viên!!!");
+      setStory("error");
+      handleClick();
+    }
+  };
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleCloseDelete = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const handleClickDelete = () => {
+    handleClick();
+    setMesege("Delete successfully!!!");
+    setStory("success");
+  };
+
+  const handleClickUpdateClose = () => {
+    update.style.display = "none";
+  };
+
+  const handleClickUpdate = () => {
+    update.style.display = "block";
+  };
+
+  const hamdleCloseUpdate = () => {
+    handleClick();
+    setMesege("Update successfully!!!");
+    setStory("success");
+    handleClose();
   };
 
   return (
@@ -105,11 +164,18 @@ const Qlluong = () => {
           <h3 className="qlluong-title">Quản Lý Lương</h3>
           <div className="qlluong-search">
             <input
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
               type="text"
               className="qlluong-input"
-              placeholder="Nhập tên nhân viên cần tìm kiếm ......"
+              placeholder="Nhập mã nhân viên cần tìm kiếm ......"
             />
-            <i class="fa-solid fa-magnifying-glass qlluong-icon"></i>
+            <i
+              class="fa-solid fa-magnifying-glass qlluong-icon"
+              onClick={handleSearch}
+            ></i>
           </div>
         </div>
 
@@ -118,7 +184,7 @@ const Qlluong = () => {
             <tr>
               <th>Mã nhân viên</th>
               <th>Tên nhân viên</th>
-              <th>Ngày làm</th>
+              <th>Số ngày</th>
               <th>Ngày nghỉ</th>
               <th>Ngày công</th>
               <th>Thành tiền</th>
@@ -133,12 +199,25 @@ const Qlluong = () => {
                 <td>{item.day}</td>
                 <td>{item.price}</td>
                 <td className="function-table-qlluong">
-                  <button onClick={()=>{
-                    setData(item);
-                    clickbox()
-                  }}>View</button>
-                  <button>Upitem</button>
-                  <button>Delete</button>
+                  <button
+                    onClick={() => {
+                      setData(item);
+                      clickbox();
+                      handleClickUpdateClose();
+                    }}
+                  >
+                    View
+                  </button>
+                  <button
+                    onClick={() => {
+                      setData(item);
+                      clickbox();
+                      handleClickUpdate();
+                    }}
+                  >
+                    Update
+                  </button>
+                  <button onClick={handleClickDelete}>Delete</button>
                 </td>
               </tr>
               // <QlluongTable dataTable={item} />
@@ -157,25 +236,38 @@ const Qlluong = () => {
 
             <div className="qlluong-content">
               <div className="qlluong-content-img">
-                <img
-                  src={data.image}
-                  alt=""
-                />
+                <img src={data.image} alt="" />
               </div>
 
               <div className="qlluong-content-information">
                 <div className="qlluong-content-detail">
-                  <p>Mã nhân viên:</p>
-                  <p>Tên nhân viên: </p>
-                  <p>Ngày làm:</p>
-                  <p>Ngày nghỉ:</p>
-                  <p>Ngày công:</p>
-                  <p>Thành tiền:</p>
+                  <p>Mã nhân viên: {data.mnv}</p>
+                  <p>Tên nhân viên: {data.name}</p>
+                  <p>Số ngày: {data.daywork}</p>
+                  <p>Ngày nghỉ: {data.dayoff}</p>
+                  <p>Ngày công: {data.day}</p>
+                  <p>Thành tiền: {data.price}</p>
                 </div>
+
+                <button className="btn-update" onClick={hamdleCloseUpdate}>
+                  Cập nhật
+                </button>
               </div>
             </div>
           </div>
         </div>
+
+        <Stack spacing={10} sx={{ width: "100%" }}>
+          <Snackbar open={open} autoHideDuration={1000} onClose={handleClose}>
+            <Alert
+              onClose={handleCloseDelete}
+              severity={story}
+              sx={{ width: "100%" }}
+            >
+              {mesege}
+            </Alert>
+          </Snackbar>
+        </Stack>
       </div>
     </div>
   );

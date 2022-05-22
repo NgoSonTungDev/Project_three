@@ -40,13 +40,13 @@
     margin-left: 10%;
     table {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
+
       tr {
         th {
           width: 200px;
           padding-top: 10px;
         }
-  
+
         .chucnang {
           width: 400px;
         }
@@ -56,17 +56,38 @@
           text-align: center;
           border-bottom: 1px solid #ccc;
         }
-      
+
         .function-table-qlluong {
           width: 300px;
           // background-color: antiquewhite;
-      
+
           button {
-            // margin-left: 70px;
-            // padding: 5px;
-            width: 50px;
+            cursor: pointer;
+            width: 70px;
             height: 25px;
-            margin: 20px;
+            margin: 10px;
+            border: none;
+            outline: none;
+            font-weight: 550;
+
+            &:hover {
+              color: #ccc;
+              transform: scale(1.1);
+              transition: 100ms;
+            }
+
+            &:nth-child(1) {
+              background-color: #1E90FF;
+            }
+
+            &:nth-child(2) {
+              background-color: #32CD32;
+            }
+
+            &:nth-child(3) {
+              background-color: #DC143C;
+            }
+
           }
         }
       }
@@ -132,6 +153,17 @@
           font-weight: 500;
           padding: 15px 10px;
         }
+      }
+
+      .btn-update {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 50px;
+        cursor: pointer;
       }
     }
   }

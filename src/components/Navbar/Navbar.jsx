@@ -38,6 +38,10 @@ const Navbar = () => {
     navigation("/staff-management");
   };
 
+  const moveQLTK = () => {
+    navigation("/AccountManagement");
+  };
+
   return (
     <div>
       <div className="container_narbar">
@@ -62,7 +66,7 @@ const Navbar = () => {
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>
                     <li>Quản lý hệ thống</li>
-                    <li>Quản lý tài khoản</li>
+                    <li onClick={moveQLTK}>Quản lý tài khoản</li>
                   </ul>
                 </div>
               </li>

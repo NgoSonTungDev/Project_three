@@ -33,11 +33,11 @@ const data = [
 ];
 
 const data2 = [
-  { name: "Page A", uv: 110.2, pv: 123.32, amt: 690 },
-  { name: "Page B", uv: 153.5, pv: 425.0, amt: 387 },
-  { name: "Page C", uv: 204.3, pv: 235.3, amt: 908 },
-  { name: "Page D", uv: 121.3, pv: 345.6, amt: 532 },
-  { name: "Page E", uv: 123.3, pv: 378.9, amt: 478 },
+  { name: "Page A", uv: 110.2, pv: 523.32, amt: 690 },
+  { name: "Page B", uv: 553.5, pv: 325.0, amt: 387 },
+  { name: "Page C", uv: 404.3, pv: 735.3, amt: 908 },
+  { name: "Page D", uv: 721.3, pv: 355.6, amt: 532 },
+  { name: "Page E", uv: 523.3, pv: 778.9, amt: 478 },
   { name: "Page F", uv: 302.9, pv: 590.8, amt: 932 },
 ];
 
@@ -150,7 +150,7 @@ const Statistical = () => {
               <div className="container_Statistican_content_recharts_1_1">
                 <p>
                   {" "}
-                  <i class="bx bxl-audible"></i> Tỉ lệ truy cập trang web
+                  <i class="bx bxl-audible"></i> Tỉ Lệ Truy Cập Trang Web
                 </p>
                 <BarChart
                   className="BarChart_cont"
@@ -183,7 +183,7 @@ const Statistical = () => {
               <div className="container_Statistican_content_recharts_1_1">
                 <p>
                   {" "}
-                  <i class="bx bxl-audible"></i> Tỉ lệ đặt phong
+                  <i class="bx bxl-audible"></i> Tỉ Lệ Đặt Phòng
                 </p>
                 <LineChart
                   className="LineChart_box"

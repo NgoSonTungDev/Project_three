@@ -8,15 +8,14 @@
     display: flex;
     justify-content: space-between;
     margin-left: 20%;
-    border: 1px solid;
     padding: 10px;
+    border-bottom: 1px solid;
 
     .qlluong-search {
       align-items: center;
 
       .qlluong-input {
         padding: 10px;
-        // border-radius: 4px;
         outline: none;
         border: none;
         border-bottom: 1px solid;
@@ -39,6 +38,39 @@
     height: 550px;
     transform: translateY(85px);
     margin-left: 10%;
+    table {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+      tr {
+        th {
+          width: 200px;
+          padding-top: 10px;
+        }
+  
+        .chucnang {
+          width: 400px;
+        }
+        td {
+          width: 200px;
+          height: 50px;
+          text-align: center;
+          border-bottom: 1px solid #ccc;
+        }
+      
+        .function-table-qlluong {
+          width: 300px;
+          // background-color: antiquewhite;
+      
+          button {
+            // margin-left: 70px;
+            // padding: 5px;
+            width: 50px;
+            height: 25px;
+            margin: 20px;
+          }
+        }
+      }
+    }
   }
 
   .qlluong-modal {
@@ -48,6 +80,7 @@
     margin-top: -85vh;
     z-index: 100;
     position: relative;
+    display: none;
 
     .qlluong-modal-child {
       width: 700px;

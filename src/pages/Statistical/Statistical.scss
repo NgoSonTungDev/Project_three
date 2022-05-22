@@ -64,6 +64,7 @@
     }
     .container_Statistical_loader {
       width: 200px;
+      display: none;
       height: 100px;
       p {
         font-size: 25px;
@@ -132,7 +133,9 @@
   .container_Statistican_content {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 0;
+    overflow: hidden;
+    transition: 1s all;
     z-index: 4;
     .container_Statistican_content_text {
       width: 80%;
@@ -141,6 +144,24 @@
       transform: translateY(65px);
       font-weight: 600;
       font-size: 25px;
+      display: flex;
+      button {
+        font-weight: 500;
+        color: #000;
+        height: 30px;
+        margin-left: 100px;
+        margin-top: 6px;
+        padding: 0 14px;
+        cursor: pointer;
+        border: 1px solid #d63031;
+        background-color: transparent;
+        border-radius: 3px;
+        &:hover {
+          border: 1px solid #0984e3;
+          background-color: #3498db;
+          color: #fff;
+        }
+      }
     }
     .container_Statistican_content_recharts {
       width: 90%;
@@ -170,8 +191,10 @@
         width: 100%;
         height: 300px;
         p {
+          margin-top: 10px;
           text-transform: capitalize;
           font-weight: 600;
+          margin-left: 80px;
         }
         .AreaChart {
           margin-top: 20px;

@@ -34,6 +34,10 @@ const Navbar = () => {
     navigation("/home");
   };
 
+  const moveQLNV = () => {
+    navigation("/staff-management");
+  };
+
   return (
     <div>
       <div className="container_narbar">
@@ -52,7 +56,7 @@ const Navbar = () => {
                 Quản lý{" "}
                 <div className="quanly">
                   <ul>
-                    <li>Quản lý nhân viên</li>
+                    <li onClick ={moveQLNV}>Quản lý nhân viên</li>
                     <li>Quản lý khách hàng</li>
                     <li>Quản lý phòng</li>
                     <li>Quản lý dịch vụ</li>

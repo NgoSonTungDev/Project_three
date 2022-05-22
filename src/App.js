@@ -9,6 +9,8 @@ import ReturnRoom from "./pages/ReturnRoom/ReturnRoom";
 import BookRoom from "./pages/BookRoom/BookRoom";
 import Statistical from "./pages/Statistical/Statistical";
 import Qlluong from "./pages/QlLuong/QlLuong";
+import QlNhanVien from "./pages/QLNhanVien/QLNhanVien";
+import QLNhanVien from "./pages/QLNhanVien/QLNhanVien";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/notfound" exact element={<NotFound />} />
         {/* <Redirect to="/notfound" /> */}
         <Route path="/salary-management" exact element={<Qlluong />} />
+        <Route path="/staff-management" exact element={<QLNhanVien />} />
+        
       </Routes>
     </BrowserRouter>
   );

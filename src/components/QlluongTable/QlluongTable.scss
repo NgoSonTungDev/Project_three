@@ -1,0 +1,33 @@
+.table-qlluong {
+  width: 100%;
+
+  table {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    tr {
+      th {
+        width: 200px;
+        padding-top: 10px;
+      }
+
+      .chucnang {
+        width: 400px;
+      }
+
+      td {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .function-table-qlluong {
+        width: 400px;
+        button {
+          margin-left: 70px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

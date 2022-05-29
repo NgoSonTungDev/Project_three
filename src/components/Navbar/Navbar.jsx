@@ -42,6 +42,10 @@ const Navbar = () => {
     navigation("/AccountManagement");
   };
 
+  const moveHotel_System_Management = () => {
+    navigation("/Hotel_System_Management");
+  };
+
   return (
     <div>
       <div className="container_narbar">
@@ -65,7 +69,7 @@ const Navbar = () => {
                     <li>Quản lý phòng</li>
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>
-                    <li>Quản lý hệ thống</li>
+                    <li onClick={moveHotel_System_Management} >Quản lý hệ thống</li>
                     <li onClick={moveQLTK}>Quản lý tài khoản</li>
                   </ul>
                 </div>

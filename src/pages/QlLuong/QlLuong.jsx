@@ -16,7 +16,7 @@ const Qlluong = () => {
   const [data, setData] = useState(dataQLluong);
   const [open, setOpen] = useState(false);
   const [story, setStory] = useState("");
-  const [mesege, setMesege] = useState("");
+  const [mesage, setMesage] = useState("");
 
   var box = document.querySelector(".qlluong-modal");
   var update = document.querySelector(".btn-update");
@@ -33,19 +33,18 @@ const Qlluong = () => {
     box.style.display = "none";
   };
 
-  const handleSearch = () => {
-    setSearch("");
-    if (dataQLluong.find((item) => item.mnv === search)) {
-      box.style.display = "block";
-      setData(dataQLluong.find((item) => item.mnv === search));
-    } else {
-      setMesege("Không tìm thấy nhân viên!!!");
-      setStory("error");
-      handleClick();
-    }
-  };
+  // const handleSearch = () => {
+  //   setSearch("");
+  //   if (dataQLluong.find((item) => item.mnv === search)) {
+  //     box.style.display = "block";
+  //     setData(dataQLluong.find((item) => item.mnv === search));
+  //   } else {
+  //     setMesage("Không tìm thấy nhân viên!!!");
+  //     setStory("error");
+  //     handleClick();
+  //   }
+  // };
 
-  //
   const handleSearchEmployees = () => {
     const newArr = dataQLluong.filter((item) =>
       item?.name?.toLowerCase()?.includes(search.toLowerCase())
@@ -54,12 +53,11 @@ const Qlluong = () => {
   };
 
   const handleFillSearchEmployees = (val) => {
-    setSearch(val)
-    if(val === '') {
-      setData(dataQLluong)
+    setSearch(val);
+    if (val === "") {
+      setData(dataQLluong);
     }
-  }
-  //
+  };
 
   const handleClick = () => {
     setOpen(true);
@@ -74,7 +72,7 @@ const Qlluong = () => {
 
   const handleClickDelete = () => {
     handleClick();
-    setMesege("Delete successfully!!!");
+    setMesage("Delete successfully!!!");
     setStory("success");
   };
 
@@ -88,14 +86,22 @@ const Qlluong = () => {
 
   const hamdleCloseUpdate = () => {
     handleClick();
-    setMesege("Update successfully!!!");
+    setMesage("Update successfully!!!");
     setStory("success");
     handleClose();
   };
-  
-  // const handleDeleteEmployee = () => {
-    
-  // }
+
+  const handleDeleteEmployee = (e) => {
+    handleClickDelete();
+    if (dataQLluong.find((object) => object.mnv === e.mnv)) {
+      const deleteItem = dataQLluong.filter((item) => item.mnv !== e.mnv);
+      setData(deleteItem);
+      console.log(deleteItem);
+    }
+    handleClick();
+    setMesage("Delete successfully!!!");
+    setStory("success");
+  };
 
   return (
     <div>
@@ -111,7 +117,7 @@ const Qlluong = () => {
               //   setSearch(e.target.value);
               // }}
               onChange={(e) => {
-                handleFillSearchEmployees(e.target.value)
+                handleFillSearchEmployees(e.target.value);
               }}
               type="text"
               className="qlluong-input"
@@ -162,7 +168,13 @@ const Qlluong = () => {
                   >
                     Update
                   </button>
-                  <button onClick={handleClickDelete}>Delete</button>
+                  <button
+                    onClick={() => {
+                      handleDeleteEmployee(item);
+                    }}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
               // <QlluongTable dataTable={item} />
@@ -195,7 +207,7 @@ const Qlluong = () => {
                 </div>
 
                 <button className="btn-update" onClick={hamdleCloseUpdate}>
-                  Cập nhật
+                  Update
                 </button>
               </div>
             </div>
@@ -213,7 +225,7 @@ const Qlluong = () => {
               severity={story}
               sx={{ width: "100%" }}
             >
-              {mesege}
+              {mesage}
             </Alert>
           </Snackbar>
         </Stack>

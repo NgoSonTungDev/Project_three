@@ -11,9 +11,9 @@
     padding: 10px;
     border-bottom: 1px solid;
 
-      .qlluong-title {
-        margin-left: 30px;
-      }
+    .qlluong-title {
+      margin-left: 30px;
+    }
 
     .qlluong-search {
       align-items: center;
@@ -73,9 +73,10 @@
             border: none;
             outline: none;
             font-weight: 550;
+            border-radius: 2px;
 
             &:hover {
-              color: #ccc;
+              color: #fff;
               transform: scale(1.1);
               transition: 100ms;
             }
@@ -107,17 +108,24 @@
     display: none;
 
     .qlluong-modal-child {
+      position: relative;
+      position: absolute;
       width: 700px;
       height: 500px;
       background-color: #fff;
-      position: absolute;
       top: 100px;
       left: 400px;
+      border-radius: 2px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
       .qlluong-child-close {
         text-align: right;
         padding: 5px 10px;
         opacity: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
         cursor: pointer;
 
         &:hover {
@@ -167,6 +175,13 @@
         text-decoration: none;
         margin-left: 50px;
         cursor: pointer;
+        border-radius: 2px; 
+
+        &:hover {
+          color: #ccc;
+          transform: scale(1.025);
+          transition: 200ms;
+        }
       }
     }
   }

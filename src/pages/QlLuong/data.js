@@ -43,7 +43,7 @@ export const dataQLluong = [
       mnv: 105,
       name: "Nguyễn Lương Bảo",
       image:
-        "https://icdn.dantri.com.vn/thumb_w/640/2019/03/04/hot-girl-viet-ru-nhau-tung-loat-anh-bikini-nong-bong-19-1551714677239.jpg",
+        "https://upanh123.com/wp-content/uploads/2020/12/anh-cute-meo1.jpg",
       daywork: 30,
       dayoff: 4,
       day: 26,
@@ -63,7 +63,7 @@ export const dataQLluong = [
       mnv: 107,
       name: "Nguyễn Xuân Tiến",
       image:
-        "https://thegioikinhnghiem.com/wp-content/uploads/2021/06/le-thi-khanh-huyen-5.jpg",
+        "https://anhdephd.vn/wp-content/uploads/2022/04/hinh-anh-meo-khoc.jpg",
       daywork: 30,
       dayoff: 2,
       day: 28,
@@ -73,7 +73,7 @@ export const dataQLluong = [
       mnv: 108,
       name: "Nguyễn Thanh Hải",
       image:
-        "https://ttk16.com/wp-content/uploads/2021/11/tran-huyen-chau-bikini-600x800.jpg",
+        "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/8/21/829850/Bat-Cuoi-Truoc-Nhung-07.jpg",
       daywork: 30,
       dayoff: 2,
       day: 28,
@@ -81,9 +81,9 @@ export const dataQLluong = [
     },
     {
       mnv: 109,
-      name: "Nguyễn Đức Hiếu",
+      name: "Lưu Đức Minh",
       image:
-        "https://ttk16.com/wp-content/uploads/2021/11/tran-huyen-chau-bikini-600x800.jpg",
+        "https://toigingiuvedep.vn/wp-content/uploads/2022/01/anh-meo-cute.jpg",
       daywork: 30,
       dayoff: 2,
       day: 28,
@@ -93,7 +93,7 @@ export const dataQLluong = [
       mnv: 110,
       name: "Trần Quang Thắng",
       image:
-        "https://ttk16.com/wp-content/uploads/2021/11/tran-huyen-chau-bikini-600x800.jpg",
+        "https://i.pinimg.com/564x/65/45/ef/6545ef6867f225ebacaed2eb60b4343a.jpg",
       daywork: 30,
       dayoff: 2,
       day: 28,

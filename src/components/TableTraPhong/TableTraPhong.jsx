@@ -1,23 +1,21 @@
-import React from 'react';
-import Datatraphong from './Datatraphong';
-import "./Traphong.scss"
-
+import React from "react";
+import Datatraphong from "./Datatraphong";
+import "./Traphong.scss";
 
 const TableTraPhong = () => {
-    return (
-        <div>
+  return (
+    <div>
       <table className="table_traphong">
         <tr>
-          <th>Mã Đặt Phòng  </th>
+          <th>Mã Phòng </th>
           <th>Tên Khách Hàng </th>
           <th>Số Điện Thoại </th>
           <th>Số CCCD </th>
-          <th>Ngày Đặt</th>
-          <th>Tên Phòng</th>
-          <th>Số Người ở</th>
-          <th>Trả Trước</th>
-          <th>ghi chú</th>
-
+          <th>Ngày Đến</th>
+          <th>Ngày Rời Đi</th>
+          <th>Phòng Số </th>
+          <th>Số Tiền Cần thanh toán </th>
+          <th>Chức Năng </th>
         </tr>
         {Datatraphong.map((item) => (
           <tr>
@@ -26,16 +24,23 @@ const TableTraPhong = () => {
             <td>{item.phone}</td>
             <td>{item.CCCD}</td>
             <td>{item.dayorder}</td>
+            <td>{item.day_of_leaving}</td>
             <td>{item.nameroom}</td>
-            <td>{item.songuoio}</td>
             <td>{item.thanhtoan}</td>
-            <td>{item.note}</td>
-
+            <td>
+                  <button>
+                    <i class="fa-solid fa-pen-to-square"></i>{" "}
+                    <span>Chính Sửa</span>
+                  </button>
+                  <button>
+                    <i class="bx bxs-trash"></i> <span>Xóa</span>
+                  </button>
+                </td>
           </tr>
         ))}
       </table>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default TableTraPhong;

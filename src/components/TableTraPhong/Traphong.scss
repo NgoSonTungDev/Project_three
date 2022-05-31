@@ -1,17 +1,46 @@
 .table_traphong {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    height: 600px;
+    margin-left: 5%;
   
     td,
-    th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        text-transform: capitalize;
+        padding: 10px;
+        justify-content: space-between;
+
+      }
+      td {
+        button {
+          cursor: pointer;
+          padding: 3px 8px;
+          margin-left: 15px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          font-size: 15px;
+          justify-content: space-between;
+          i{
+              font-size: 15px;
+          }
+          &:nth-child(1):hover {
+            cursor: pointer;
+            color: #f39c12;
+          }
+          &:nth-child(2):hover {
+            cursor: pointer;
+            color: #d63031;
+          }
+        }
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
     }
   
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  }
   

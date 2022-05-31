@@ -16,6 +16,8 @@ const TableDatPhong = () => {
           <th>Số Người ở</th>
           <th>Trả Trước</th>
           <th>ghi chú</th>
+          <th>Chức năng</th>
+
 
         </tr>
         {Datadatphong.map((item) => (
@@ -29,6 +31,14 @@ const TableDatPhong = () => {
             <td>{item.songuoio}</td>
             <td>{item.thanhtoan}</td>
             <td>{item.note}</td>
+            <td><button>
+                    <i class="fa-solid fa-pen-to-square"></i>{" "}
+                    <span>Chính Sửa</span>
+                  </button>
+                  <button>
+                    <i class="bx bxs-trash"></i> <span>Xóa</span>
+                  </button></td>
+
 
           </tr>
         ))}

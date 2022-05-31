@@ -30,12 +30,12 @@ const QLHethongKhachSan = () => {
           </div>
         </div>
         <div className="container_QLKhachSan_table">
-        {/* <div className="container_QLKhachSan_table_datphong">
+        <div className="container_QLKhachSan_table_datphong">
             <TableDatPhong/>
-        </div> */}
-        <div className="container_QLKhachSan_table_traphong">
-          <TableTraPhong/>
         </div>
+        {/* <div className="container_QLKhachSan_table_traphong">
+          <TableTraPhong/>
+        </div> */}
 
         </div>
       </div>

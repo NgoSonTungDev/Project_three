@@ -42,6 +42,10 @@ const Navbar = () => {
     navigation("/AccountManagement");
   };
 
+  const moveQLKH = () => {
+    navigation("/customer-management");
+  };
+
   return (
     <div>
       <div className="container_narbar">
@@ -61,7 +65,7 @@ const Navbar = () => {
                 <div className="quanly">
                   <ul>
                     <li onClick ={moveQLNV}>Quản lý nhân viên</li>
-                    <li>Quản lý khách hàng</li>
+                    <li onClick={moveQLKH}>Quản lý khách hàng</li>
                     <li>Quản lý phòng</li>
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>

@@ -11,7 +11,7 @@ import Statistical from "./pages/Statistical/Statistical";
 import Qlluong from "./pages/QlLuong/QlLuong";
 import QLNhanVien from "./pages/QLNhanVien/QLNhanVien";
 import AccountManagement from "./pages/AccountManagement/AccountManagement";
-
+import QLKhachHang from "./pages/QLKhachHang/QLKhachHang";
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +29,7 @@ function App() {
         <Route path="/salary-management" exact element={<Qlluong />} />
         <Route path="/staff-management" exact element={<QLNhanVien />} />
         <Route path="/AccountManagement" exact element={<AccountManagement />} />
+        <Route path="/customer-management" exact element={<QLKhachHang />} />
       </Routes>
     </BrowserRouter>
   );

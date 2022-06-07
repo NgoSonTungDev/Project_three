@@ -35,7 +35,6 @@ function App() {
           exact
           element={<AccountManagement />}
         />
-
         <Route
           path="/Hotel_System_Management"
           exact

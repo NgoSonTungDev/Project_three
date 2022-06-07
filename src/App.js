@@ -12,6 +12,7 @@ import Qlluong from "./pages/QlLuong/QlLuong";
 import QLNhanVien from "./pages/QLNhanVien/QLNhanVien";
 import AccountManagement from "./pages/AccountManagement/AccountManagement";
 import QLHethongKhachSan from "./pages/QLHethongKhachSan/QLHethongKhachSan";
+import QLKhachHang from "./pages/QLKhachHang/QLKhachHang";
 
 function App() {
   return (
@@ -29,9 +30,18 @@ function App() {
         <Route path="/notfound" exact element={<NotFound />} />
         <Route path="/salary-management" exact element={<Qlluong />} />
         <Route path="/staff-management" exact element={<QLNhanVien />} />
-        <Route path="/AccountManagement" exact element={<AccountManagement />} />
-        <Route path="/Hotel_System_Management" exact element={<QLHethongKhachSan />} />
+        <Route
+          path="/AccountManagement"
+          exact
+          element={<AccountManagement />}
+        />
 
+        <Route
+          path="/Hotel_System_Management"
+          exact
+          element={<QLHethongKhachSan />}
+        />
+        <Route path="/customer-management" exact element={<QLKhachHang />} />
       </Routes>
     </BrowserRouter>
   );

@@ -42,8 +42,14 @@ const Navbar = () => {
     navigation("/AccountManagement");
   };
 
+
   const moveHotel_System_Management = () => {
     navigation("/Hotel_System_Management");
+  }
+
+  const moveQLKH = () => {
+    navigation("/customer-management");
+
   };
 
   return (
@@ -65,7 +71,7 @@ const Navbar = () => {
                 <div className="quanly">
                   <ul>
                     <li onClick ={moveQLNV}>Quản lý nhân viên</li>
-                    <li>Quản lý khách hàng</li>
+                    <li onClick={moveQLKH}>Quản lý khách hàng</li>
                     <li>Quản lý phòng</li>
                     <li>Quản lý dịch vụ</li>
                     <li>Quản lý tiện nghi</li>
@@ -126,4 +132,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

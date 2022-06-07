@@ -1,6 +1,7 @@
 .container_QLKhachSan {
   width: 100%;
   height: 100%;
+  background-color: #fff;
   .quanlyhethong_title {
     transform: translateY(65px);
     width: 60%;
@@ -41,6 +42,7 @@
 
     .QuanLytraphong {
       button {
+        cursor: pointer;
         padding: 20px;
         margin: 0;
         width: 300px;
@@ -78,6 +80,7 @@
     }
     .QuanLydatphong {
       button {
+        cursor: pointer;
         padding: 20px;
         margin: 0;
         width: 300px;
@@ -114,22 +117,23 @@
       }
     }
   }
-  .container_QLKhachSan_table{
-      margin-top: 20px;
-      position: relative;
+  .container_QLKhachSan_table {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    .container_QLKhachSan_table_datphong {
+      position: absolute;
       width: 100%;
       height: 480px;
-      .container_QLKhachSan_table_datphong{
-          position: absolute;
-          width: 100%;
-          height: 200px;
-      }
-    //   .container_QLKhachSan_table_traphong{
-    //       position: absolute;
-    //     width: 100%;
-    //     height: 300px;
-
-    //   }
-
+      overflow-y: scroll;
+    }
+    .container_QLKhachSan_table_traphong {
+      display: none;
+      width: 100%;
+      position: absolute;
+      height: 480px;
+      overflow-y: scroll;
+    }
   }
 }

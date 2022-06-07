@@ -3,21 +3,21 @@ import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import Navbar from "../../components/Navbar/Navbar";
-import "./QLNhanVien.scss";
-import { dataQLNhanVien } from "./data";
+import "./QLKhachHang.scss";
+import { dataQLKhachHang } from "./data";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-const QLNhanVien = () => {
+const QLKhachHang = () => {
   const [search, setSearch] = useState("");
   const [selectedItem, setSelectedItem] = useState({});
-  const [data, setData] = useState(dataQLNhanVien);
+  const [data, setData] = useState(dataQLKhachHang);
   const [open, setOpen] = useState(false);
   const [story, setStory] = useState("");
   const [mesege, setMesege] = useState("");
-  var box = document.querySelector(".qlnhanvien-modal");
+  var box = document.querySelector(".qlkhachhang-modal");
   var update = document.querySelector(".btn-update");
 
   const clickbox = () => {
@@ -25,7 +25,7 @@ const QLNhanVien = () => {
   };
 
   React.useEffect(() => {
-    setData(dataQLNhanVien);
+    setData(dataQLKhachHang);
   }, []);
 
   const handleClose = () => {
@@ -45,8 +45,8 @@ const QLNhanVien = () => {
   // };
   //
   const handleSetSearch = () => {
-    const newArr = dataQLNhanVien.filter(item =>
-      item?.manv?.toLowerCase()?.includes(search.toLowerCase())
+    const newArr = dataQLKhachHang.filter(item =>
+      item?.makh?.toLowerCase()?.includes(search.toLowerCase())
     );
     setData(newArr);
   };
@@ -101,10 +101,10 @@ const QLNhanVien = () => {
   return (
     <div>
       <Navbar />
-      <div className="qlnhanvien-container">
-        <div className="qlnhanvien-header">
-          <h3 className="qlnhanvien-title">Quản Lý Nhân Viên</h3>
-          <div className="qlnhanvien-search">
+      <div className="qlkhachhang-container">
+        <div className="qlkhachhang-header">
+          <h3 className="qlkhachhang-title">Quản Lý Khách Hàng</h3>
+          <div className="qlkhachhang-search">
             <input
               value={search}
               onChange={(e) => {
@@ -114,38 +114,36 @@ const QLNhanVien = () => {
             //     handleSetSearch(e.target.value);
             //   }}
               type="text"
-              className="qlnhanvien-input"
-              placeholder="Nhập mã nhân viên cần tìm kiếm ......"
+              className="qlkhachhang-input"
+              placeholder="Nhập mã khách hàng cần tìm kiếm ......"
             />
             <i
-              class="fa-solid fa-magnifying-glass qlnhanvien-icon"
+              class="fa-solid fa-magnifying-glass qlkhachhang-icon"
               onClick={handleSetSearch}
             ></i>
           </div>
         </div>
 
-        <div className="qlnhanvien-table">
+        <div className="qlkhachhang-table">
           <table>
             <tr>
-              <th>Mã nhân viên</th>
-              <th>Tên nhân viên</th>
-              <th>Ngày sinh</th>
-              <th>Email</th>
+              <th>Mã khách hàng</th>
+              <th>Tên khách hàng</th>
+              <th>Năm sinh</th>
               <th>Địa chỉ</th>
               <th>Số CMND</th>
-              <th>Chức vụ</th>
+              <th>SĐT</th>
               <th className="chucnang">Chức năng</th>
             </tr>
             {data.map(item => (
               <tr>
-                <td>{item.manv}</td>
+                <td>{item.makh}</td>
                 <td>{item.name}</td>
                 <td>{item.birtDay}</td>
-                <td>{item.email}</td>
                 <td>{item.adress}</td>
-                <td>{item.cmnd}</td>
-                <td>{item.position}</td>
-                <td className="function-table-qlnhanvien">
+                <td>{item.scmnd}</td>
+                <td>{item.sdt}</td>
+                <td className="function-table-qlkhachhang">
                   <button
                     onClick={() => {
                       setSelectedItem(item);
@@ -172,29 +170,28 @@ const QLNhanVien = () => {
           </table>
         </div>
 
-        <div className="qlnhanvien-modal">
-          <div className="qlnhanvien-modal-child">
-            <div className="qlnhanvien-child-close" onClick={handleClose}>
+        <div className="qlkhachhang-modal">
+          <div className="qlkhachhang-modal-child">
+            <div className="qlkhachhang-child-close" onClick={handleClose}>
               <i class="fa-solid fa-xmark "></i>
             </div>
-            <div className="qlnhanvien-content-title">
-              <h2>Thông tin nhân viên</h2>
+            <div className="qlkhachhang-content-title">
+              <h2>Thông tin khách hàng</h2>
             </div>
 
-            <div className="qlnhanvien-content">
-              <div className="qlnhanvien-content-img">
+            <div className="qlkhachhang-content">
+              <div className="qlkhachhang-content-img">
                 <img src={selectedItem.image} alt="" />
               </div>
 
-              <div className="qlnhanvien-content-information">
-                <div className="qlnhanvien-content-detail">
-                  <p>Mã nhân viên : {selectedItem.manv}</p>
-                  <p>Tên nhân viên : {selectedItem.name}</p>
-                  <p>Ngày sinh : {selectedItem.birtDay}</p>
-                  <p>Email : {selectedItem.email}</p>
+              <div className="qlkhachhang-content-information">
+                <div className="qlkhachhang-content-detail">
+                  <p>Mã khách hàng : {selectedItem.makh}</p>
+                  <p>Tên khách hàng : {selectedItem.name}</p>
+                  <p>Năm sinh : {selectedItem.birtDay}</p>
                   <p>Địa chỉ : {selectedItem.adress}</p>
-                  <p>Số chứng minh nhân dân : {selectedItem.cmnd}</p>
-                  <p>Chức vụ : {selectedItem.position}</p>
+                  <p>Số chứng minh nhân dân : {selectedItem.scmnd}</p>
+                  <p>Số điện thoại : {selectedItem.sdt}</p>
                 </div>
 
                 <button className="btn-update" onClick={hamdleCloseUpdate}>
@@ -225,4 +222,4 @@ const QLNhanVien = () => {
   );
 };
 
-export default QLNhanVien;
+export default QLKhachHang;

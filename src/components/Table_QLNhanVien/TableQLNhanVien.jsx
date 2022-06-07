@@ -4,7 +4,7 @@ const TableQLNhanVien = props => {
   const item = props.DTTBQLNV;
   return (
     <div>
-      <div className="ContainerTableQLNv">
+      {/* <div className="ContainerTableQLNv">
         <table>
           <tr>
             <th>Mã Nhân Viên</th>
@@ -33,7 +33,7 @@ const TableQLNhanVien = props => {
             </tr>
           ))}
         </table>
-      </div>
+      </div> */}
     </div>
   );
 };

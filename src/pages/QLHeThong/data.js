@@ -1,0 +1,38 @@
+const dataQLHeThong = [
+    {
+        id: 001,
+        khachthue: "phan tấn phu",
+        loaiphong: "vip",
+        trangthai: "trong",
+        ngaydat: "20.02.2020",
+        ngaytra: "22/07/2020",
+        tongtien: "1.500.350.00",
+    },
+    {
+        id: 001,
+        khachthue: "phan tấn phu",
+        loaiphong: "vip",
+        trangthai: "trong",
+        ngaydat: "20.02.2020",
+        ngaytra: "22/07/2020",
+        tongtien: "1.500.350.00",
+    },
+    {
+        id: 001,
+        khachthue: "phan tấn phu",
+        loaiphong: "vip",
+        trangthai: "trong",
+        ngaydat: "20.02.2020",
+        ngaytra: "22/07/2020",
+        tongtien: "1.500.350.00",
+    },
+    {
+        id: 001,
+        khachthue: "phan tấn phu",
+        loaiphong: "vip",
+        trangthai: "trong",
+        ngaydat: "20.02.2020",
+        ngaytra: "22/07/2020",
+        tongtien: "1.500.350.00",
+    },
+];

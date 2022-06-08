@@ -28,7 +28,7 @@ export const dataQLKhachHang=[
         scmnd:" 206218783",
         sdt: "0835929813",
         image:
-        "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hemyn4b08hgAX-KJek1&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT-WmP3srBFJlFHLKBXw0A3irw7VQW3tmpezuV5xyTZ4MQ&oe=6294D368",
+        "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nCB7-bnwKfMAX_nvHWF&_nc_ht=scontent.fdad3-4.fna&oh=00_AT_FE46dP8wfi298l35qPg7Z85na3cx-bvric0VGRj7d4A&oe=62A4A568",
       },
       {
         makh: "KH4",
@@ -38,7 +38,7 @@ export const dataQLKhachHang=[
         scmnd: "206252783",
         sdt: "0835125813",
         image:
-        "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/275298231_2902640756693135_8045657954402984784_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=iBBaHtpeasMAX_Cgrk_&_nc_ht=scontent.fsgn2-4.fna&oh=00_AT8ODpWEGtblJbEBMQ8Wmvi2u5LNtGki466mp6Q7rYGbtA&oe=6295C0BA",
+        "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/275298231_2902640756693135_8045657954402984784_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=GC_s30y8YLUAX_puNFC&_nc_ht=scontent.fdad3-4.fna&oh=00_AT8NsIiU3IdvSeYervwCbk8PNApu9FIOBNy-_cmeFjfsRw&oe=62A592BA",
       },
        {
         makh: "KH5",
@@ -58,7 +58,7 @@ export const dataQLKhachHang=[
         scmnd: "206212983",
         sdt: "0835429813",
         image:
-        "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/275226123_3172813369710549_5209110041199415994_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=zCgonE-L_icAX9O5m7Y&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT8HHrluLfOoONLTgcCKL17OfpcA186CAZbcnKsVxqgH4w&oe=629498D6",
+        "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/275226123_3172813369710549_5209110041199415994_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KE0JMVSxMwUAX9f39z3&_nc_ht=scontent.fdad3-1.fna&oh=00_AT9t6B83ujatlAma0TrAbezf7oBNeOddrdvFQRs_-ucrGA&oe=62A46AD6",
       },
       {
         makh: "KH7",
@@ -68,16 +68,36 @@ export const dataQLKhachHang=[
         scmnd: "206712983",
         sdt: "0835329813",
         image:
-        "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/241285211_1163536897474815_710362382045724672_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=zlcJzhF6dz8AX_dRF1v&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT_Qu5qDOKjo4Z7JSFuaTpkY0eOxN5opb32KZCtePJVqRQ&oe=62961CA1",
+        "https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/241285211_1163536897474815_710362382045724672_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-id16J_IxlcAX8KSG6x&_nc_ht=scontent.fdad3-5.fna&oh=00_AT-dkxbsXT0FzIBspT1-uqCngH0IFWMLdlp4PY4p6gbdeA&oe=62A5EEA1",
       },
       {
         makh: "KH8",
-      name: "Phamj Thu Sương",
+        name: "Phạm Thu Sương",
         birtDay: 1994,
         adress: "Quảng Nam",
         scmnd: "206512983",
         sdt: "0845429813",
         image:
-        "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/204584674_562647554925213_2305278184391227707_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=0U0hBGlLLsYAX-BkXFX&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT_y_1o0Rn36khgksirENcKhdzH9gowKftq5jZNasNVlVg&oe=62964A30",
+        "https://scontent.fdad3-5.fna.fbcdn.net/v/t1.6435-9/161820329_483400666183236_7314971640712112792_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Fj2g2cvafI0AX-6umth&_nc_ht=scontent.fdad3-5.fna&oh=00_AT8oCkKtvd3kecq7XRx85OAgNcz4bzM5b4AmjbMyDj4tKA&oe=62C501D1",
+      },
+      {
+        makh: "KH9",
+        name: "Phạm Thu Sương",
+        birtDay: 1994,
+        adress: "Quảng Nam",
+        scmnd: "206512983",
+        sdt: "0845429813",
+        image:
+        "https://scontent.fdad3-5.fna.fbcdn.net/v/t1.6435-9/161820329_483400666183236_7314971640712112792_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Fj2g2cvafI0AX-6umth&_nc_ht=scontent.fdad3-5.fna&oh=00_AT8oCkKtvd3kecq7XRx85OAgNcz4bzM5b4AmjbMyDj4tKA&oe=62C501D1",
+      },
+      {
+        makh: "KH10",
+        name: "Phạm Thu Sương",
+        birtDay: 1994,
+        adress: "Quảng Nam",
+        scmnd: "206512983",
+        sdt: "0845429813",
+        image:
+        "https://scontent.fdad3-5.fna.fbcdn.net/v/t1.6435-9/161820329_483400666183236_7314971640712112792_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Fj2g2cvafI0AX-6umth&_nc_ht=scontent.fdad3-5.fna&oh=00_AT8oCkKtvd3kecq7XRx85OAgNcz4bzM5b4AmjbMyDj4tKA&oe=62C501D1",
       },
 ];

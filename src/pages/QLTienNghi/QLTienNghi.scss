@@ -1,8 +1,8 @@
-.qlkhachhang-container {
+.qltiennghi-container {
     width: 100%;
     height: 100vh;
   
-    .qlkhachhang-header {
+    .qltiennghi-header {
       transform: translateY(65px);
       width: 60%;
       display: flex;
@@ -11,13 +11,13 @@
       padding: 10px;
       border-bottom: 1px solid;
   
-        .qlkhachhang-title {
+        .qltiennghi-title {
           margin-left: 30px;
         }
   
-      .qlkhachhang-search {
+      .qltiennghi-search {
         align-items: center;
-        .qlkhachhang-input {
+        .qltiennghi-input {
           padding: 10px;
           outline: none;
           border: none;
@@ -25,7 +25,7 @@
           // border-bottom: 10px solid;
         }
   
-        .qlkhachhang-icon {
+        .qltiennghi-icon {
           // cursor: pointer;
           padding: 10px;
           // border-radius: 0 10px 10px 0;
@@ -37,7 +37,7 @@
       }
     }
   
-    .qlkhachhang-table {
+    .qltiennghi-table {
       width: 90%;
       height: 550px;
       transform: translateY(85px);
@@ -64,7 +64,7 @@
             
           }
   
-          .function-table-qlkhachhang {
+          .function-table-qltiennghi {
             width: 300px;
   
             button {
@@ -104,7 +104,7 @@
       }
     }
   
-    .qlkhachhang-modal {
+    .qltiennghi-modal {
       width: 100%;
       height: 100vh;
       background: rgb(0, 0, 0, 0.3);
@@ -113,7 +113,7 @@
       position: relative;
       display: none;
   
-      .qlkhachhang-modal-child {
+      .qltiennghi-modal-child {
         width: 700px;
         // height: 500px;
         background-color: #fff;
@@ -121,7 +121,7 @@
         top: 100px;
         left: 400px;
   
-        .qlkhachhang-child-close {
+        .qltiennghi-child-close {
           text-align: right;
           padding: 5px 10px;
           opacity: 1;
@@ -132,17 +132,17 @@
           }
         }
   
-        .qlkhachhang-content-title {
+        .qltiennghi-content-title {
           text-align: center;
           height: 40px;
           width: 100%;
         }
   
-        .qlkhachhang-content {
+        .qltiennghi-content {
           width: 100%;
           display: flex;
   
-          .qlkhachhang-content-img {
+          .qltiennghi-content-img {
             width: 250px;
             height: 300px;
             margin: 40px 60px;
@@ -154,7 +154,7 @@
           }
         }
   
-        .qlkhachhang-content-information {
+        .qltiennghi-content-information {
           width: 100%;
           margin: 35px 20px 0 0;
   

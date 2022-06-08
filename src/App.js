@@ -13,7 +13,7 @@ import QLNhanVien from "./pages/QLNhanVien/QLNhanVien";
 import AccountManagement from "./pages/AccountManagement/AccountManagement";
 import QLHethongKhachSan from "./pages/QLHethongKhachSan/QLHethongKhachSan";
 import QLKhachHang from "./pages/QLKhachHang/QLKhachHang";
-
+import QLTienNghi from "./pages/QLTienNghi/QLTienNghi";
 function App() {
   return (
     <BrowserRouter>
@@ -41,6 +41,8 @@ function App() {
           element={<QLHethongKhachSan />}
         />
         <Route path="/customer-management" exact element={<QLKhachHang />} />
+        <Route path="/convenient-management" exact element={<QLTienNghi />} />
+
       </Routes>
     </BrowserRouter>
   );

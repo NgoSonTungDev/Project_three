@@ -52,7 +52,7 @@ export const dataQLNhanVien = [
           cmnd:12342124,
           position: "Nhân Viên",
           image:
-        "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/275226123_3172813369710549_5209110041199415994_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=zCgonE-L_icAX9O5m7Y&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT8HHrluLfOoONLTgcCKL17OfpcA186CAZbcnKsVxqgH4w&oe=629498D6",
+        "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/275226123_3172813369710549_5209110041199415994_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KE0JMVSxMwUAX9f39z3&_nc_ht=scontent.fdad3-1.fna&oh=00_AT9t6B83ujatlAma0TrAbezf7oBNeOddrdvFQRs_-ucrGA&oe=62A46AD6",
         },
         {
           manv: "006",
@@ -63,7 +63,7 @@ export const dataQLNhanVien = [
           cmnd:4309123,
           position: "Nhân Viên",
           image:
-          "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/274884387_1616219258742843_8707129246043356443_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=K7p7AUCS09sAX_I_eNr&_nc_ht=scontent.fsgn2-4.fna&oh=00_AT_LkrjYNYwsgMmndORxPkPnzwAU0jZ4UwFg3Zbaeif8RA&oe=629595B8",
+          "https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/144669815_1354359608262144_3894751758341832671_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=kJs9k2tIpycAX9upaRP&_nc_ht=scontent.fdad3-4.fna&oh=00_AT94zXNLN2wIX-zZRL6YrTBwRId31sHpDcIqb8yfL_9lPg&oe=62C6C2D0",
         },
         {
           manv: "007",
@@ -74,6 +74,28 @@ export const dataQLNhanVien = [
           cmnd:4309123,
           position: "Nhân Viên",
           image:
-        "https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hemyn4b08hgAX-KJek1&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT-WmP3srBFJlFHLKBXw0A3irw7VQW3tmpezuV5xyTZ4MQ&oe=6294D368",
+        "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nCB7-bnwKfMAX_nvHWF&_nc_ht=scontent.fdad3-4.fna&oh=00_AT_FE46dP8wfi298l35qPg7Z85na3cx-bvric0VGRj7d4A&oe=62A4A568",
+        },
+        {
+          manv: "008",
+          name: "Ngô Văn",
+          birtDay:"01/02/1999",
+          email: "hieu@gmail.com",
+          adress:"Tam Kì-QN",
+          cmnd:4309123,
+          position: "Nhân Viên",
+          image:
+        "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nCB7-bnwKfMAX_nvHWF&_nc_ht=scontent.fdad3-4.fna&oh=00_AT_FE46dP8wfi298l35qPg7Z85na3cx-bvric0VGRj7d4A&oe=62A4A568",
+        },
+        {
+          manv: "009",
+          name: "Phan Văn Hiếu",
+          birtDay:"01/02/1999",
+          email: "hieu@gmail.com",
+          adress:"Tam Kì-QN",
+          cmnd:4309123,
+          position: "Nhân Viên",
+          image:
+        "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/233723801_2955223381409721_5959827904039970840_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nCB7-bnwKfMAX_nvHWF&_nc_ht=scontent.fdad3-4.fna&oh=00_AT_FE46dP8wfi298l35qPg7Z85na3cx-bvric0VGRj7d4A&oe=62A4A568",
         },
 ];

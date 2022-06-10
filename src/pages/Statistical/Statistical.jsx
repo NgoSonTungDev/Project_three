@@ -141,7 +141,7 @@ const Statistical = () => {
         <div className="container_Statistican_content">
           <div className="container_Statistican_content_text">
             <p>
-              Audience Overview : (SINCE : "{date1}" TO DATE : "{date2}")
+              Báo cáo thống kê : (Từ : "{date1}" Đến : "{date2}")
             </p>
             <button onClick={handlePrint}>Xuất Báo Cáo</button>
           </div>

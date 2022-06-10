@@ -90,7 +90,7 @@ const Login = () => {
                     setPass(e.target.value);
                   }}
                 />
-                <label>Passwork</label>
+                <label>Password</label>
               </div>
               <p
                 className="forgot"

@@ -1,31 +1,28 @@
-import React from "react";
-import Datatraphong from "./Datatraphong";
-import "./Traphong.scss";
+import React from 'react';
+import "./TableQLphong.scss"
+import DataQLphong from './DataTableQLphong';
 
-
-const TableTraPhong = () => {
-  return (
-    <div>
-      <table className="table_traphong">
+const TableQLphong = () => {
+    return (
+        <div>
+           <table className="table_QLphong">
         <tr>
           <th>Mã Phòng </th>
-          <th>Tên Khách Hàng </th>
+          <th>Tên Người Book </th>
           <th>Số Điện Thoại </th>
-          <th>Số CCCD </th>
-          <th>Ngày Đến</th>
-          <th>Ngày Rời Đi</th>
+          <th>Tình Trạng Phòng </th>
+          <th>Tình Trạng Vệ Sinh Phòng</th>
           <th>Phòng Số </th>
-          <th>Số Tiền Cần thanh toán </th>
+          <th>Giá Phòng</th>
           <th>Chức Năng </th>
         </tr>
-        {Datatraphong.map((item) => (
+        {DataQLphong.map((item) => (
           <tr>
             <td>{item.Maphong}</td>
             <td>{item.name}</td>
             <td>{item.phone}</td>
-            <td>{item.CCCD}</td>
-            <td>{item.dayorder}</td>
-            <td>{item.day_of_leaving}</td>
+            <td>{item.Tinhtrang}</td>
+            <td>{item.TinhtrangVS}</td>
             <td>{item.nameroom}</td>
             <td>{item.thanhtoan}</td>
             <td>
@@ -39,9 +36,9 @@ const TableTraPhong = () => {
                 </td>
           </tr>
         ))}
-      </table>
-    </div>
-  );
+      </table> 
+        </div>
+    );
 };
 
-export default TableTraPhong;
+export default TableQLphong;

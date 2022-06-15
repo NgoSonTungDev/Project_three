@@ -42,7 +42,7 @@ function App() {
         />
         <Route path="/customer-management" exact element={<QLKhachHang />} />
         <Route path="/convenient-management" exact element={<QLTienNghi />} />
-
+        <Route path="*" exact element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

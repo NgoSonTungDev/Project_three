@@ -1,0 +1,48 @@
+.container_QuanDV{
+    width: 100%;
+  
+    .qldichvu-header{
+      transform: translateY(65px);
+      width: 60%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20%;
+      padding: 10px;
+      border-bottom: 1px solid;
+  
+        .qldichvu-title{
+          margin-left: 30px;
+          cursor: pointer;
+        }
+  
+      .qldichvu-search{
+        align-items: center;
+        .qldichvu-input{
+          padding: 10px;
+          outline: none;
+          border: none;
+          border-radius: 15px;
+          // border-bottom: 10px solid;
+        }
+  
+        .qldichvu-icon{
+          // cursor: pointer;
+          padding: 10px;
+          // border-radius: 0 10px 10px 0;
+          cursor: pointer;
+  
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  .container_tableQLphong{
+    width: 90%;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow-y: scroll;
+  }
+}   

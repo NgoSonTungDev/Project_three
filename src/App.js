@@ -14,6 +14,9 @@ import AccountManagement from "./pages/AccountManagement/AccountManagement";
 import QLHethongKhachSan from "./pages/QLHethongKhachSan/QLHethongKhachSan";
 import QLKhachHang from "./pages/QLKhachHang/QLKhachHang";
 import QLTienNghi from "./pages/QLTienNghi/QLTienNghi";
+import QLPhong from "./pages/QLPhong/QLPhong";
+import ServiceManagement from "./pages/ServiceManagement/ServiceManagement";
+
 function App() {
   return (
     <BrowserRouter>
@@ -43,6 +46,8 @@ function App() {
         <Route path="/customer-management" exact element={<QLKhachHang />} />
         <Route path="/convenient-management" exact element={<QLTienNghi />} />
         <Route path="*" exact element={<NotFound />} />
+         <Route path="/room-manager" exact element={<QLPhong />} />
+        {/* <Routes path="/service-management" exact element={<ServiceManagement />} /> */}
       </Routes>
     </BrowserRouter>
   );

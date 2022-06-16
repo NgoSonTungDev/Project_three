@@ -45,7 +45,7 @@ const QLNhanVien = () => {
   // };
   //
   const handleSetSearch = () => {
-    const newArr = dataQLNhanVien.filter(item =>
+    const newArr = dataQLNhanVien.filter((item) =>
       item?.manv?.toLowerCase()?.includes(search.toLowerCase())
     );
     setData(newArr);
@@ -110,9 +110,9 @@ const QLNhanVien = () => {
               onChange={(e) => {
                 setSearch(e.target.value);
               }}
-            //   onChange={e => {
-            //     handleSetSearch(e.target.value);
-            //   }}
+              //   onChange={e => {
+              //     handleSetSearch(e.target.value);
+              //   }}
               type="text"
               className="qlnhanvien-input"
               placeholder="Nhập mã nhân viên cần tìm kiếm ......"
@@ -136,7 +136,7 @@ const QLNhanVien = () => {
               <th>Chức vụ</th>
               <th className="chucnang">Chức năng</th>
             </tr>
-            {data.map(item => (
+            {data.map((item) => (
               <tr>
                 <td>{item.manv}</td>
                 <td>{item.name}</td>
@@ -170,40 +170,40 @@ const QLNhanVien = () => {
               // <QlluongTable dataTable={item} />
             ))}
           </table>
+          
         </div>
-
         <div className="qlnhanvien-modal">
-          <div className="qlnhanvien-modal-child">
-            <div className="qlnhanvien-child-close" onClick={handleClose}>
-              <i class="fa-solid fa-xmark "></i>
-            </div>
-            <div className="qlnhanvien-content-title">
-              <h2>Thông tin nhân viên</h2>
-            </div>
-
-            <div className="qlnhanvien-content">
-              <div className="qlnhanvien-content-img">
-                <img src={selectedItem.image} alt="" />
+            <div className="qlnhanvien-modal-child">
+              <div className="qlnhanvien-child-close" onClick={handleClose}>
+                <i class="fa-solid fa-xmark "></i>
+              </div>
+              <div className="qlnhanvien-content-title">
+                <h2>Thông tin nhân viên</h2>
               </div>
 
-              <div className="qlnhanvien-content-information">
-                <div className="qlnhanvien-content-detail">
-                  <p>Mã nhân viên : {selectedItem.manv}</p>
-                  <p>Tên nhân viên : {selectedItem.name}</p>
-                  <p>Ngày sinh : {selectedItem.birtDay}</p>
-                  <p>Email : {selectedItem.email}</p>
-                  <p>Địa chỉ : {selectedItem.adress}</p>
-                  <p>Số chứng minh nhân dân : {selectedItem.cmnd}</p>
-                  <p>Chức vụ : {selectedItem.position}</p>
+              <div className="qlnhanvien-content">
+                <div className="qlnhanvien-content-img">
+                  <img src={selectedItem.image} alt="" />
                 </div>
 
-                <button className="btn-update" onClick={hamdleCloseUpdate}>
-                  Cập nhật
-                </button>
+                <div className="qlnhanvien-content-information">
+                  <div className="qlnhanvien-content-detail">
+                    <p>Mã nhân viên : {selectedItem.manv}</p>
+                    <p>Tên nhân viên : {selectedItem.name}</p>
+                    <p>Ngày sinh : {selectedItem.birtDay}</p>
+                    <p>Email : {selectedItem.email}</p>
+                    <p>Địa chỉ : {selectedItem.adress}</p>
+                    <p>Số chứng minh nhân dân : {selectedItem.cmnd}</p>
+                    <p>Chức vụ : {selectedItem.position}</p>
+                  </div>
+
+                  <button className="btn-update" onClick={hamdleCloseUpdate}>
+                    Cập nhật
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
         <Stack spacing={10} sx={{ width: "100%" }}>
           <Snackbar

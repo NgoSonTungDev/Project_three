@@ -78,7 +78,7 @@ const Navbar = () => {
                       navigation("/room-manager");
                     }} >Quản lý phòng</li>
                     <li onClick={() => {
-                      navigation("/service-management")
+                      navigation("/ServiceManagement")
                     }} >Quản lý dịch vụ</li>
                     <li onClick={moveQLTN}>Quản lý tiện nghi</li>
                     <li onClick={moveHotel_System_Management}>

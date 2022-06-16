@@ -107,19 +107,20 @@
     .qlkhachhang-modal {
       width: 100%;
       height: 100vh;
-      background: rgb(0, 0, 0, 0.3);
-      margin-top: -70vh;
       z-index: 100;
-      position: relative;
+      position: absolute;
       display: none;
+      margin-top: -90vh;
   
       .qlkhachhang-modal-child {
         width: 700px;
-        // height: 500px;
         background-color: #fff;
         position: absolute;
-        top: 100px;
+        top: 200px;
         left: 400px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+
   
         .qlkhachhang-child-close {
           text-align: right;

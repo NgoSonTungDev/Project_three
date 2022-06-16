@@ -47,7 +47,9 @@ function App() {
         <Route path="/convenient-management" exact element={<QLTienNghi />} />
         <Route path="*" exact element={<NotFound />} />
          <Route path="/room-manager" exact element={<QLPhong />} />
-        {/* <Routes path="/service-management" exact element={<ServiceManagement />} /> */}
+         <Route path="/ServiceManagement" exact element={<ServiceManagement />} />
+
+        
       </Routes>
     </BrowserRouter>
   );

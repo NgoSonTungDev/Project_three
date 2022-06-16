@@ -3,7 +3,7 @@ export const dataQLluong = [
       mnv: 101,
       name: "Ngô Văn Hiếu",
       image:
-        "https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/274578592_3098543270411064_3551142759358568005_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vFOuXrpR_wcAX9bj1a6&_nc_ht=scontent.fdad3-5.fna&oh=00_AT-UEtU8-_7Fwg3DUDMS4xjKP14Fvbp9syQefu_eK7CZkw&oe=628CCB81",
+        "https://images.unsplash.com/photo-1655311651642-d28c076c1482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       daywork: 30,
       dayoff: 3,
       day: 27,
@@ -13,7 +13,7 @@ export const dataQLluong = [
       mnv: 102,
       name: "Ngô Sơn Tùng",
       image:
-        "https://gamek.mediacdn.vn/133514250583805952/2020/5/21/photo-1-1590057409626715380949.jpg",
+        "https://images.unsplash.com/photo-1655276920760-ac3bedef4857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       daywork: 30,
       dayoff: 0,
       day: 30,
